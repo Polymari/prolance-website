@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #303030;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 10px 3px #a6a6a660;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ef8508;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #303030;
+  font-size: 0.95rem;
+}
+
+nav > a:hover {
+  color: #ef8508;
+}
+
+.profile-icon {
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  display: flex;
+}
+
+.profile-icon a {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-icon img {
+  height: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.socials img {
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+}

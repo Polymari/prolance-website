@@ -1,0 +1,169 @@
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+aside {
+  width: 250px;
+}
+
+.profile-card {
+  background-color: #ffe87d;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.name {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.network-overview {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.network-overview h3 {
+  color: #f7931e;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  margin-bottom: 1rem;
+}
+
+.stat strong {
+  font-size: 1.3rem;
+}
+
+.stat span {
+  display: block;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.search-sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.search-sort input {
+  padding: 0.6rem 1rem;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.sort .highlight {
+  color: #f7931e;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.user-card {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.user-card .connect-btn {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #f7931e;
+  background: white;
+  color: #f7931e;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.group-card {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.group-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.yellow {
+  background-color: #ffe87d;
+}
+
+.group-info {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.group-name {
+  font-weight: 600;
+}
+
+.group-size {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.view-btn {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #f7931e;
+  background: white;
+  color: #f7931e;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.see-more {
+  margin-top: 1rem;
+  background-color: #f3f3f3;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
