@@ -30,9 +30,17 @@
     <main>
       <aside>
         <div class="profile-card">
-          <div class="avatar">👤</div>
-          <div class="name">Your name</div>
-          <div class="role">Website Design</div>
+          <span class="profile-card-yellow">
+            <div class="content">
+              <div class="avatar">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
+              <div class="name">Your name</div>
+              <div class="role">Website Design</div>
+            </div>
+          </span>
         </div>
 
         <div class="network-overview">
@@ -55,46 +63,74 @@
       <section class="main-content">
         <div class="search-sort">
           <input type="text" placeholder="Search people" />
-          <div class="sort">Sort by: <span class="highlight">A-Z</span> ⌄</div>
+          <div class="sort">
+            <span>Sort by:</span>
+            <select class="sort-by">
+              <option value="option-1">A-Z</option>
+              <option value="option-2">Z-A</option>
+            </select>
+          </div>
         </div>
 
         <div class="section">
           <h2>Recommended for you</h2>
           <div class="card-grid">
-            <!-- Repeat this card -->
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
-              <div class="name">Name</div>
-              <div class="role">Website Design</div>
-              <button class="connect-btn">Connect</button>
-            </div>
-            <!-- copy this 5x for accuracy -->
-            <div class="user-card">
-              <div class="avatar yellow">👤</div>
-              <div class="name">Name</div>
-              <div class="role">Website Design</div>
-              <button class="connect-btn">Connect</button>
-            </div>
-            <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
               <button class="connect-btn">Connect</button>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
               <button class="connect-btn">Connect</button>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
               <button class="connect-btn">Connect</button>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
+              <div class="name">Name</div>
+              <div class="role">Website Design</div>
+              <button class="connect-btn">Connect</button>
+            </div>
+            <div class="user-card">
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
+              <div class="name">Name</div>
+              <div class="role">Website Design</div>
+              <button class="connect-btn">Connect</button>
+            </div>
+            <div class="user-card">
+              <div class="avatar-connect">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
               <button class="connect-btn">Connect</button>
@@ -107,32 +143,56 @@
           <h2>Your Connections</h2>
           <div class="card-grid">
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
             <div class="user-card">
-              <div class="avatar yellow">👤</div>
+              <div class="avatar-connections">
+                <a href="#"
+                  ><img src="/assets/img/profile.png" alt="profile icon"
+                /></a>
+              </div>
               <div class="name">Name</div>
               <div class="role">Website Design</div>
             </div>
@@ -159,7 +219,7 @@
             </div>
             <button class="view-btn">View</button>
           </div>
-          <button class="see-more">See More</button>
+          <button class="see-more-group">See More</button>
         </div>
       </section>
     </main>

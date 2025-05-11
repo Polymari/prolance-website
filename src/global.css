@@ -34,11 +34,12 @@ nav {
 nav > a {
   text-decoration: none;
   color: #303030;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 nav > a:hover {
   color: #ef8508;
+  text-decoration: underline;
 }
 
 .profile-icon {
@@ -55,6 +56,10 @@ nav > a:hover {
 }
 
 .profile-icon img {
+  height: 1.5rem;
+}
+
+.profile-icon img:hover {
   height: 1.5rem;
 }
 
