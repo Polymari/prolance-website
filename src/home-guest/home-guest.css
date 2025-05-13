@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+  position: relative; 
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ef8508;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #ef8508;
+    transition: 0.20s;
+}
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border: 2px solid #EF8508;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-outline:hover{
+    color:white;
+    background-color: #EF8508;
+    transition: 0.35s;
+}
+
+.btn-filled {
+  padding: 0.8rem 1.2rem;
+  background: #FFEEA8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1.75rem;
+  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  color: #80562b;
+  font-size:20px;
+}
+
+.btn-filled:hover{
+    background: #FFDE59;
+    transition: 0.35s;
+}
+
+.hero {
+  display:flex;
+  justify-content: space-between;
+  padding: 4rem 4rem;
+  height: 517px;
+  background-image: url(/ProLance/assets/img/home/img/home_header.png);
+  background-size: cover;
+  background-position: right center; 
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+.hero-content h1 span {
+  color: #fff;
+}
+
+.hero p {
+  max-width: 400px;
+  font-size: 22px;
+
+}
+.hero span{
+    color: #FFEEA8;
+}
+.hero-image img {
+  max-width: 250px;
+}
+
+.why {
+  background: #f9f9f9;
+  position: relative;
+  height: 402px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+.img-container{
+    position: relative;
+}
+
+.img-container img{
+    height: 402px;
+    display: block;
+}
+
+.img-container h2 {
+  top: 70px;
+  left: 93px;
+  position: absolute;  
+  font-size: 45px;
+  font-weight:  600px;
+  margin-bottom: 1.5rem;
+  line-height: 1.35;
+}
+
+.why h2 span {
+  color: #EF8508;
+}
+.why p {
+  padding-top: 2.35rem;
+  padding-left: 6rem;
+  font-size: 20px;
+  line-height: 1.35;
+
+}
+.why p span{
+    font-weight: 600;
+}
+
+
+.services {
+  text-align: center;
+  padding: 2rem;
+}
+
+.services h2{
+  padding-top: 2rem;
+  font-size: 40px;
+}
+
+.tags {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.tags span {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
+  padding: 0.5rem 1.9rem;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.tags span:hover {
+  background: #EF8508;
+  transition: 0.4s;
+  color: white;
+  transform: scale(1.1);  
+}
+
+.portfolio {
+  padding: 2rem;
+  text-align: center;
+}
+.portfolio h2 {
+  font-size: 40px;
+}
+.portfolio h2 span {
+  color: #EF8508;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  width: 680px;
+  margin: 0 auto;
+  gap: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+.portfolio-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1.4rem;
+  margin-top: 1rem;
+  overflow: hidden; 
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.portfolio-images img{
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.portfolio-images img:hover{
+  transform: scale(1.1);   
+  transition-duration: 0.5s;
+}
+
+.img-wrapper {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  object-fit: cover;
+}
+
+.portfolio-images a {
+    flex: 0 0 130px;
+}
+
+.carousel-btn {
+  background-color: #EF8508;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.1rem 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.carousel-btn.left,
+.carousel-btn.right {
+  position: static;
+}
+
+.cta {
+  background: #fef3c7;
+  padding: 2rem;
+  margin: 0 8rem 0 8rem;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 1.35;
+  margin-bottom: 2rem;
+}
+.cta h2 {
+  margin-bottom: 1rem;
+  font-size: 36px;
+  color: #EF8508;
+  font-weight: 600;
+}
+
+.cta-btn {
+  padding: 0.8rem 1.6rem;
+  background: #EF8508;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  color: white;
+  font-size:18px;
+}
+
+.cta-btn:hover{
+    background: #FFDE59;
+    transition: 0.35s;
+    color:#80562b;
+}
+
+.sub-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #ddd;
+  padding: 2rem;
+}
+
+.prolance{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-left{
+    line-height: 1.35;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px; 
+}
+
+.footer-links a:hover{
+  text-decoration: underline;
+  color: #EF8508;
+}
+
+.contact-item img {
+  width: 17x; 
+  height: 17px;
+}
+
+.bottom-footer {
+  display: flex;
+  border-top: 1px solid #ddd;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+  font-size: 15px;
+}
+
+.social-footer {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-footer a {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.social-footer img {
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+}
+
