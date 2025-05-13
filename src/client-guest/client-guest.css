@@ -21,9 +21,9 @@ header.navbar {
   align-items: center;
   padding: 1.25rem 3rem 1.25rem 3rem;
   background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  z-index: 1000; 
-  position: relative; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: relative;
 }
 
 .logo {
@@ -39,43 +39,42 @@ nav {
   font-size: 1rem;
 }
 
-nav a:hover{
-    text-decoration: underline;
-    color: #ef8508;
-    transition: 0.20s;
+nav a:hover {
+  text-decoration: underline;
+  color: #ef8508;
+  transition: 0.2s;
 }
 
 .btn-outline {
   padding: 0.5rem 1rem;
-  border: 2px solid #EF8508;
+  border: 2px solid #ef8508;
   background: transparent;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.btn-outline:hover{
-    color:white;
-    background-color: #EF8508;
-    transition: 0.35s;
+.btn-outline:hover {
+  color: white;
+  background-color: #ef8508;
+  transition: 0.35s;
 }
 
-
 .hero {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 4rem 4rem;
   height: 517px;
   position: relative;
-  background-image: url(/ProLance/assets/img/client/img/client_header.jpg);
+  background-image: url(/assets/img/client/img/client_header.jpg);
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .hero-content {
-  color:white;
+  color: white;
   font-size: 44px;
   margin-bottom: 1rem;
   line-height: 1.35;
@@ -87,7 +86,10 @@ nav a:hover{
 
 .overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
@@ -95,10 +97,9 @@ nav a:hover{
 .hero p {
   max-width: 400px;
   font-size: 22px;
-
 }
-.hero span{
-    color: #FFEEA8;
+.hero span {
+  color: #ffeea8;
 }
 .hero-image img {
   max-width: 250px;
@@ -106,22 +107,22 @@ nav a:hover{
 
 .btn-filled {
   padding: 0.8rem 1.75rem;
-  background: #EF8508;
+  background: #ef8508;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 1.75rem;
-  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   color: #ffffff;
-  font-size:20px;
+  font-size: 20px;
   font-weight: 300;
 }
 
-.btn-filled:hover{
-    background: #FFDE59;
-    color: #80562b;
-    transition: 0.35s;
+.btn-filled:hover {
+  background: #ffde59;
+  color: #80562b;
+  transition: 0.35s;
 }
 
 .do {
@@ -148,12 +149,12 @@ nav a:hover{
   max-width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  text-align: center; 
+  align-items: center;
+  text-align: center;
 }
 .do-step .icon {
-  height: 36px;
-  width: 36px;
+  height: 30px;
+  width: 30px;
   margin-bottom: 1rem;
   object-fit: contain;
 }
@@ -169,17 +170,18 @@ nav a:hover{
   color: #555;
 }
 
-.testimony{
-  text-align: center; 
+.testimony {
+  text-align: center;
   margin-bottom: 2rem;
 }
 
-.testimony h2{
-  color: #EF8508;
+.testimony h2 {
+  color: #ef8508;
   font-size: 2rem;
+  margin-top: 1rem;
 }
 
-.testimony h2 span{
+.testimony h2 span {
   color: #000000;
 }
 
@@ -200,7 +202,7 @@ nav a:hover{
 
 .testimonial-card {
   background-color: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   text-align: center;
@@ -250,12 +252,11 @@ nav a:hover{
 }
 
 .dot:hover {
-  cursor:pointer;
-  filter:brightness(1.075);
+  cursor: pointer;
+  filter: brightness(1.075);
   height: 13px;
   width: 13px;
 }
-
 
 .cta {
   background: #fef3c7;
@@ -269,30 +270,30 @@ nav a:hover{
 .cta h2 {
   margin-bottom: 2rem;
   font-size: 36px;
-  color: #EF8508;
+  color: #ef8508;
   font-weight: 600;
 }
 
 .cta-btn {
   padding: 0.8rem 1.6rem;
-  background: #FFDE59;
+  background: #ffde59;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 4px 8px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  color: #EF8508;
-  font-size:18px;
+  color: #ef8508;
+  font-size: 18px;
   font-weight: 400;
 }
 
-.cta-btn:hover{
-    background: #EF8508;
-    transition: 0.35s;
-    color:white;
+.cta-btn:hover {
+  background: #ef8508;
+  transition: 0.35s;
+  color: white;
 }
 
-.sub-footer{
+.sub-footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -305,30 +306,30 @@ nav a:hover{
   padding: 2rem;
 }
 
-.prolance{
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 0.5rem;
+.prolance {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
 }
 
-.footer-left{
-    line-height: 1.35;
+.footer-left {
+  line-height: 1.35;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
   text-decoration: underline;
-  color: #EF8508;
+  color: #ef8508;
 }
 
 .contact-item img {
-  width: 17x; 
+  width: 17x;
   height: 17px;
 }
 
