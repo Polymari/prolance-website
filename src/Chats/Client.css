@@ -118,14 +118,6 @@ header {
   align-self: flex-start;
 }
 
-.message.incoming p {
-  color: #f7931e;
-  font-weight: bold;
-  align-self: flex-start;
-  margin-bottom: 0.5rem;
-  font-size: 14px;
-}
-
 .message.outgoing {
   background-color: #ffeea8;
   align-self: flex-end;

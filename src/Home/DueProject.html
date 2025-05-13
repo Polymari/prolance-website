@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProLance | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Home/DueProject.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ProLance</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="/src/Networks/Networks.html">Networks</a>
+        <a href="/src/Chats/Chats.html">Chats</a>
+        <a href="/src/Notifications/Notifications.html">Notification</a>
+        <div class="profile-icon">
+          <a href="#"
+            ><img src="/assets/img/profile.png" alt="profile icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul class="job-list">
+          <li class="job active" onclick="showJob(event, 'job1')">
+            <div class="job-content">
+              <img
+                src="/assets/img/mobilapp.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Design</h4>
+                <p>Clarity Chart Group</p>
+                <p>Design an app named Clarity</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job2')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Redesign</h4>
+                <p>Opera Group</p>
+                <p>Please redesign an app</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <section id="job1" class="job-detail active">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred1.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Clarity Chart Group</p>
+                <h2 class="job-title">Website Design</h2>
+              </div>
+            </div>
+            <p class="due-time">Due August 11th 2025</p>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+               </pre>
+        </section>
+
+        <section id="job2" class="job-detail">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Opera Group</p>
+                <h2 class="job-title">Website Redesign</h2>
+              </div>
+            </div>
+            <p class="due-time">Due January 1st 2026</p>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+            </pre>
+        </section>
+
+        <div class="upload-project">
+          <h3><b>Upload Project</b></h3>
+          <button class="upload-btn">⬆ Upload</button>
+        </div>
+
+        <div class="upload">
+          <h3>Upload History</h3>
+          <ul class="upload-history">
+            <li>
+              Revision 2.png <span class="timestamp">10 minutes ago</span>
+            </li>
+            <li>Revision 1.png <span class="timestamp">1 day ago</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-person">
+          <h3>Clients</h3>
+          <div class="client">
+            <img
+              src="/assets/img/profile.png"
+              alt="client icon"
+              class="client-icon"
+            />
+            <span>Mr. Tung Tung Sahur</span>
+            <a href="/src/Chats/Client.html">
+              <button class="contact-btn">Contact</button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="DueProject.js"></script>
+  </body>
+</html>
