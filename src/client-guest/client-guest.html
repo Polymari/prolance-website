@@ -1,111 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ProLance</title>
-  <link rel="stylesheet" href="/ProLance/src/client-guest/client-guest.css" />
-  <link rel="stylesheet" href="/ProLance/src/global.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo"><span>ProLance</span></div>
-    <nav>
-      <a href="/ProLance/src/home-guest/home-guest.html">Home</a>
-      <a href="/ProLance/src/client-guest/client-guest.html">Become a Client</a>
-      <button class="btn-outline">Join Us</button>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProLance</title>
+    <link rel="stylesheet" href="/src/client-guest/client-guest.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><span>ProLance</span></div>
+      <nav>
+        <a href="/src/home-guest/home-guest.html">Home</a>
+        <a href="/src/client-guest/client-guest.html">Become a Client</a>
+        <a href="/src/join/join.html">
+          <button class="btn-outline">Join Us</button>
+        </a>
+      </nav>
+    </header>
 
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Hire top talent, get work done <br>faster with ProLance</h1>
-      <button class="btn-filled" onclick="window.location.href='#'">Join us</button>
-    </div>
-  </section>
-
-<section class="do">
-  <h2>What Clients Do</h2>
-  <div class="do-steps">
-    <div class="do-step">
-      <img src="/ProLance/assets/img/icons/file.png" alt="file" class="icon">
-      <h3>Post Projects</h3>
-      <p>Share your project <br>needs in minutes.</p>
-    </div>
-    <div class="do-step">
-      <img src="/ProLance/assets/img/icons/user.png" alt="user" class="icon">
-      <h3>Hire Talent</h3>
-      <p>Find and work with <br>trusted freelancers.</p>
-    </div>
-    <div class="do-step">
-      <img src="/ProLance/assets/img/icons/dollar.png" alt="dollar_sign" class="icon">
-      <h3>Pay Securely</h3>
-      <p>Release payments only<br> when work is done.</p>
-    </div>
-  </div>
- </section>
-
- <section class="testimony">
-  <h2>Client <span>Testimonies</span></h2>
-
-  <div class="testimonial-card">
-      <img src="/ProLance/assets/img/client/img/testimony.jpg" alt="Client Photo" class="client-photo"/>
-      <div class="testimonial-content">
-        <p>"ProLance made it incredibly easy to find the right <br>freelancer for our app design. The process was smooth,<br> communication was seamless, and the results exceeded <br>our expectations. We'll definitely be back!"</p>
-        <p class="client-name">— <span>Benjamin, Startup Founder</span></p>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Hire top talent, get work done <br />faster with ProLance</h1>
+        <a href="/src/join/join.html"
+          ><button class="btn-filled" onclick="window.location.href='#'">
+            Join us
+          </button></a
+        >
       </div>
-  </div>
-  <div class="dots">
-     <span class="dot active"></span>
-     <span class="dot"></span>
-     <span class="dot"></span>
-  </div>
- </section>
+    </section>
 
-  <section class="cta">
-    <h2>Ready to Kickstart Your Journey?</h2>
-    <a class="cta-btn">Join Us</a>
-  </section>
+    <section class="do">
+      <h2>What Clients Do</h2>
+      <div class="do-steps">
+        <div class="do-step">
+          <img src="/assets/img/Fileplus.png" alt="file" class="icon" />
+          <h3>Post Projects</h3>
+          <p>Share your project <br />needs in minutes.</p>
+        </div>
+        <div class="do-step">
+          <img src="/assets/img/User.png" alt="user" class="icon" />
+          <h3>Hire Talent</h3>
+          <p>Find and work with <br />trusted freelancers.</p>
+        </div>
+        <div class="do-step">
+          <img
+            src="/assets/img/Dollar sign.png"
+            alt="dollar_sign"
+            class="icon"
+          />
+          <h3>Pay Securely</h3>
+          <p>
+            Release payments only<br />
+            when work is done.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimony">
+      <h2>Client <span>Testimonies</span></h2>
+
+      <div class="testimonial-card">
+        <img
+          src="/assets/img/client/img/testimony.jpg"
+          alt="Client Photo"
+          class="client-photo"
+        />
+        <div class="testimonial-content">
+          <p>
+            "ProLance made it incredibly easy to find the right <br />freelancer
+            for our app design. The process was smooth,<br />
+            communication was seamless, and the results exceeded <br />our
+            expectations. We'll definitely be back!"
+          </p>
+          <p class="client-name">— <span>Benjamin, Startup Founder</span></p>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to Kickstart Your Journey?</h2>
+      <a href="/src/join/join.html" class="cta-btn">Join Us</a>
+    </section>
 
     <div class="sub-footer">
-     <div class="footer-left">
-       <div class="prolance"><p>ProLance </p></div>
-         <p>Prolance is a dynamic </p>
-         <p>freelancing platform that</p> 
-         <p>empowers professionals</p>  
-         <p>and clients to connect, </p>
-         <p>collaborate, and thrive.</p>
-     </div>
-     <div class="footer-links">
-       <h4>Navigate</h4>
-       <a href="home-guest.html">Home</a>
-       <br><a href="client-guest.html">Become a Client</a>
-       <br><a href="#">Join Us</a>
-     </div>  
-     <div class="footer-contact">
-       <h4>Contact Us</h4>
-       <div class="contact-item">
-        <img src="/ProLance/assets/img/icons/phone.png" alt="Phone Icon" />
+      <div class="footer-left">
+        <div class="prolance"><p>ProLance</p></div>
+        <p>Prolance is a dynamic</p>
+        <p>freelancing platform that</p>
+        <p>empowers professionals</p>
+        <p>and clients to connect,</p>
+        <p>collaborate, and thrive.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="/src/home-guest/home-guest.html">Home</a>
+        <br /><a href="/src/client-guest/client-guest.html">Become a Client</a>
+        <br /><a href="/src/join/join.html">Join Us</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <img src="/assets/img/icons/phone.png" alt="Phone Icon" />
           <p>+62 888 1234 5678</p>
-       </div>
+        </div>
 
-       <div class="contact-item">
-         <img src="/ProLance/assets/img/icons/mail.png" alt="Email Icon" />
-         <p>support@prolance.com</p>
-       </div>
-     </div>
-    </div>
-
-  <footer class="bottom-footer">
-     <p>© ProLance 2025</p>
-      <div class="socials">
-        <a href="#"><img src="/ProLance/assets/img/icons/facebook.png" alt="facebook icon" /></a>
-        <a href="#"><img src="/ProLance/assets/img/icons/instagram.png" alt="instagram icon" /></a>
-        <a href="#"><img src="/ProLance/assets/img/icons/linkedin.png" alt="linkedin icon" /></a>
+        <div class="contact-item">
+          <img src="/assets/img/icons/mail.png" alt="Email Icon" />
+          <p>support@prolance.com</p>
+        </div>
       </div>
     </div>
-  </footer>
-</body>
+
+    <footer class="bottom-footer">
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
