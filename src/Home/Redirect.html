@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProLance | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Home/Redirect.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ProLance</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="/src/Networks/Networks.html">Networks</a>
+        <a href="/src/Chats/Chats.html">Chats</a>
+        <a href="/src/Notifications/Notifications.html">Notification</a>
+        <div class="profile-icon">
+          <a href="#"
+            ><img src="/assets/img/profile.png" alt="profile icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul class="job-list">
+          <li class="job active" onclick="showJob(event, 'job1')">
+            <div class="job-content">
+              <img
+                src="/assets/img/mobilapp.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Mobile App UI</h4>
+                <p>PT. Bola Dunia Berbakti</p>
+                <p>Urgent need UI for Mobile App</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job2')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Redesign</h4>
+                <p>Opera Group</p>
+                <p>Please redesign an app</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job3')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred1.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Design</h4>
+                <p>Clarity Chart Group</p>
+                <p>Design an app named Clarity</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job4')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred2.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Design</h4>
+                <p>Company Start-Up</p>
+                <p>Design a website</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job5')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred3.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Game Design</h4>
+                <p>Microsoft</p>
+                <p>Design a game surface</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <main class="main">
+        <section id="job1" class="job-detail active">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/mobilapp.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">PT. Bola Dunia Berbakti</p>
+                <h2 class="job-title">Mobile App UI</h2>
+              </div>
+            </div>
+            <p class="time-posted">11 hours ago</p>
+          </div>
+
+          <div class="button-submit">
+            <button onclick="showJob(event, 'submit')">
+              Submit Job Proposal
+            </button>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+
+                <b>Requirements</b>
+                1. Proven experience designing mobile app UI (portfolio required)
+                2. Proficiency in Figma, Adobe XD, or similar tools
+                3. Understanding of mobile UX best practices
+                4. Ability to create reusable components and design systems
+                5. Good communication and openness to feedback
+                6. Bonus: Experience collaborating with developers
+               </pre>
+        </section>
+
+        <section id="job2" class="job-detail">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Opera Group</p>
+                <h2 class="job-title">Website Redesign</h2>
+              </div>
+            </div>
+            <p class="time-posted">15 hours ago</p>
+          </div>
+
+          <div class="button-submit">
+            <button onclick="showJob(event, 'submit')">
+              Submit Job Proposal
+            </button>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+
+                <b>Requirements</b>
+                1. Proven experience designing mobile app UI (portfolio required)
+                2. Proficiency in Figma, Adobe XD, or similar tools
+                3. Understanding of mobile UX best practices
+                4. Ability to create reusable components and design systems
+                5. Good communication and openness to feedback
+                6. Bonus: Experience collaborating with developers
+               </pre>
+        </section>
+
+        <section id="job3" class="job-detail">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred1.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Clarity Chart Group</p>
+                <h2 class="job-title">Website Design</h2>
+              </div>
+            </div>
+            <p class="time-posted">15 hours ago</p>
+          </div>
+
+          <div class="button-submit">
+            <button onclick="showJob(event, 'submit')">
+              Submit Job Proposal
+            </button>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+
+                <b>Requirements</b>
+                1. Proven experience designing mobile app UI (portfolio required)
+                2. Proficiency in Figma, Adobe XD, or similar tools
+                3. Understanding of mobile UX best practices
+                4. Ability to create reusable components and design systems
+                5. Good communication and openness to feedback
+                6. Bonus: Experience collaborating with developers
+               </pre>
+        </section>
+
+        <section id="job4" class="job-detail">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred2.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Company start-up</p>
+                <h2 class="job-title">Website Design</h2>
+              </div>
+            </div>
+            <p class="time-posted">34 hours ago</p>
+          </div>
+
+          <div class="button-submit">
+            <button onclick="showJob(event, 'submit')">
+              Submit Job Proposal
+            </button>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+
+                <b>Requirements</b>
+                1. Proven experience designing mobile app UI (portfolio required)
+                2. Proficiency in Figma, Adobe XD, or similar tools
+                3. Understanding of mobile UX best practices
+                4. Ability to create reusable components and design systems
+                5. Good communication and openness to feedback
+                6. Bonus: Experience collaborating with developers
+               </pre>
+        </section>
+
+        <section id="job5" class="job-detail">
+          <div class="job-header">
+            <div class="job-company-info">
+              <img
+                src="/assets/img/webred3.png"
+                alt="company logo"
+                class="job-header-logo"
+              />
+              <div class="job-text-group">
+                <p class="company-name">Microsoft</p>
+                <h2 class="job-title">Game Design</h2>
+              </div>
+            </div>
+            <p class="time-posted">7 hours ago</p>
+          </div>
+
+          <div class="button-submit">
+            <button onclick="showJob(event, 'submit')">
+              Submit Job Proposal
+            </button>
+          </div>
+          <br />
+          <pre>
+                <b>About this project</b>
+                We are developing a mobile productivity app (iOS & Android) focused 
+                on daily task management, habit tracking, and progress visualization. 
+                We are seeking a skilled UI designer to create a clean, intuitive, and 
+                modern interface that enhances user engagement and ease of use.
+
+                Key Deliverables:
+                - UI designs for ~10 core screens (e.g., Home, Task List, Calendar View)
+                - Style guide (color palette, typography, buttons, icons)
+                - Design system components for consistency
+                - Prototypes (using Figma or Adobe XD)
+                - Handoff-ready assets for development
+
+                Design Goals:
+                1. Minimalist, modern, and mobile-first layout
+                2. Clear navigation and user flow
+                3. Consistent use of whitespace and color for focus
+                4. Dark mode (optional but preferred)
+
+                <b>Requirements</b>
+                1. Proven experience designing mobile app UI (portfolio required)
+                2. Proficiency in Figma, Adobe XD, or similar tools
+                3. Understanding of mobile UX best practices
+                4. Ability to create reusable components and design systems
+                5. Good communication and openness to feedback
+                6. Bonus: Experience collaborating with developers
+          </pre>
+        </section>
+
+        <section id="submit" class="job-detail">
+          <div class="submit-header">
+            <h2>Submit Your Proposal</h2>
+          </div>
+          <form class="proposal-form">
+            <label for="name">Your Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            /><br /><br />
+
+            <label for="email">Your Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            /><br /><br />
+
+            <label for="proposal">Description</label><br />
+            <textarea
+              id="proposal"
+              name="proposal"
+              rows="6"
+              placeholder="Enter a description"
+              required
+            ></textarea
+            ><br /><br />
+
+            <div class="upload-proposal">
+              <h3>Upload Proposal</h3>
+              <button class="upload-btn">⬆ Upload</button>
+            </div>
+
+            <div class="submit-proposal-btn">
+              <button type="submit">Send Proposal</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="Redirect.js"></script>
+  </body>
+</html>
