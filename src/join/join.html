@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join ProLance</title>
+    <link rel="stylesheet" href="join.css"> 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="join-header">
+        <div class="logo"><span>ProLance</span></div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="#">Become a Client</a>
+            <button class="join-button-outline">Join Us</button>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left-section">
+            <div class="left-content">
+                <h1>Your Freelance Journey Starts Here.</h1>
+                <ul>
+                    <li>500+ skill categories</li>
+                    <li>Fast, quality results</li>
+                    <li>Global talent & clients</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <!-- Content for the right side (the form) -->
+            <div class="form-container">
+                <h2>Join Us</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <!-- Optional: Add an icon here for showing/hiding password -->
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password <span class="required">*</span></label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter your password" required>
+                        <!-- Optional: Add an icon here for showing/hiding password -->
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="#">Terms</a> and <a href="#">Conditions</a></label>
+                    </div>
+                    <button type="submit" class="join-button">Join</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<<<<<<< Updated upstream
+=======
+</html>
+<script>
+        document.querySelector('.form-container form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '../home-after-join/home-after.html';
+        });
+    </script>
+</body>
+>>>>>>> Stashed changes
+</html>
