@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProLance | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Home/project-completion.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ProLance</div>
+      <nav>
+        <a href="/src/home-client/home-client.html">Home</a>
+        <a href="/src/Networks/networks-client.html">Networks</a>
+        <a href="/src/Chats/chats-client.html">Chats</a>
+        <a href="/src/Notifications/notif-client.html">Notification</a>
+        <div class="profile-icon">
+          <a href="/src/Profile/profile-client.html"
+            ><img src="/assets/img/profile.png" alt="profile icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul class="job-list">
+          <li class="job active" onclick="showJob(event, 'job1')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred3.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Design</h4>
+                <p>Lorem Ipsum Group</p>
+                <p>Design an app named Clarity</p>
+              </div>
+            </div>
+          </li>
+          <li class="job" onclick="showJob(event, 'job2')">
+            <div class="job-content">
+              <img
+                src="/assets/img/webred3.png"
+                class="job-icon"
+                alt="Mobile app icon"
+              />
+              <div class="job-text">
+                <h4>Website Redesign</h4>
+                <p>Lorem Ipsum Group</p>
+                <p>Please redesign an app</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <section id="job1" class="job-detail active">
+          <div class="submit-header">
+            <h2>Project Completion</h2>
+          </div>
+          <form class="proposal-form">
+            <label for="name">Company Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Lorem Ipsum Group"
+              required
+              readonly
+            /><br /><br />
+
+            <label for="email">Freelancer Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Freelancer name"
+              readonly
+            /><br /><br />
+
+            <label for="email">Project Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Website Design"
+              readonly
+            /><br /><br />
+          </form>
+        </section>
+
+        <section id="job2" class="job-detail">
+          <div class="submit-header">
+            <h2>Project Completion</h2>
+          </div>
+          <form class="proposal-form">
+            <label for="name">Company Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Lorem Ipsum Group"
+              required
+              readonly
+            /><br /><br />
+
+            <label for="email">Freelancer Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Freelancer name"
+              readonly
+            /><br /><br />
+
+            <label for="email">Project Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Website Redesign"
+              readonly
+            /><br /><br />
+          </form>
+        </section>
+
+        <div class="upload">
+          <h3>Project Result</h3>
+          <a href="#"><p>Revision 2.png</p></a>
+        </div>
+
+        <div class="review-section">
+          <h3>Rate & Review</h3>
+
+          <div class="star-rating">
+            <label>Rating:</label>
+            <div class="stars">
+              <span class="star" data-rating="1">★</span>
+              <span class="star" data-rating="2">★</span>
+              <span class="star" data-rating="3">★</span>
+              <span class="star" data-rating="4">★</span>
+              <span class="star" data-rating="5">★</span>
+            </div>
+            <span class="rating-display" id="ratingDisplay"
+              >Select a rating</span
+            >
+          </div>
+
+          <div class="review-form">
+            <label for="reviewText">Your Review</label>
+            <textarea
+              id="reviewText"
+              placeholder="Share your experience working with this freelancer..."
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="finish-project">
+          <a href="#">Proceed with Payment</a>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="DueProject.js"></script>
+    <script src="/src/Home/project-completion.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProLance | Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Home/addproject.css" />
+    <link rel="stylesheet" href="/src/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ProLance</div>
+      <nav>
+        <a href="/src/home-client/home-client.html">Home</a>
+        <a href="/src/Networks/networks-client.html">Networks</a>
+        <a href="/src/Chats/chats-client.html">Chats</a>
+        <a href="/src/Notifications/notif-client.html">Notification</a>
+        <div class="profile-icon">
+          <a href="/src/Profile/profile-client.html"
+            ><img src="/assets/img/profile.png" alt="profile icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-container">
+        <div class="success-message" id="successMessage">
+          ✅ Project created successfully! Redirecting to your projects...
+        </div>
+
+        <div class="form-header">
+          <h1>Add New Project</h1>
+          <p>
+            Create a new project and find the perfect freelancer for your needs
+          </p>
+        </div>
+
+        <form class="project-form" id="projectForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="projectTitle"
+                >Project Title <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="projectTitle"
+                name="projectTitle"
+                placeholder="e.g., Mobile App UI Design"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="category"
+                >Category <span class="required">*</span></label
+              >
+              <select id="category" name="category" required>
+                <option value="">Select a category</option>
+                <option value="web-development">Web Development</option>
+                <option value="mobile-development">Mobile Development</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="content-writing">Content Writing</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="data-science">Data Science</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="description"
+              >Project Description <span class="required">*</span></label
+            >
+            <textarea
+              id="description"
+              name="description"
+              placeholder="Describe your project in detail. Include objectives, requirements, and any specific preferences..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Required Skills</label>
+            <div class="tags-input" id="skillsContainer">
+              <input
+                type="text"
+                class="tag-input"
+                id="skillInput"
+                placeholder="Type a skill and press Enter..."
+              />
+            </div>
+          </div>
+
+          <div class="budget-section">
+            <div class="form-group">
+              <label>Budget Type <span class="required">*</span></label>
+              <div class="budget-type">
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    id="fixed"
+                    name="budgetType"
+                    value="fixed"
+                    checked
+                  />
+                  <label for="fixed">Fixed Price</label>
+                </div>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    id="hourly"
+                    name="budgetType"
+                    value="hourly"
+                  />
+                  <label for="hourly">Hourly Rate</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="budget"
+                >Budget Amount ($) <span class="required">*</span></label
+              >
+              <input
+                type="number"
+                id="budget"
+                name="budget"
+                placeholder="1000"
+                min="1"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="deadline">Project Deadline</label>
+              <input type="date" id="deadline" name="deadline" />
+            </div>
+            <div class="form-group">
+              <label for="experience">Experience Level</label>
+              <select id="experience" name="experience">
+                <option value="">Any experience level</option>
+                <option value="entry">Entry Level</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Project Files (Optional)</label>
+            <div class="file-upload" id="fileUpload">
+              <input
+                type="file"
+                id="projectFiles"
+                name="projectFiles"
+                multiple
+                accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png,.gif"
+              />
+              <svg
+                class="upload-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                ></path>
+              </svg>
+              <div class="upload-text">
+                <h3>Drop files here or click to upload</h3>
+                <p>PDF, DOC, TXT, Images up to 10MB each</p>
+              </div>
+            </div>
+            <div class="uploaded-files" id="uploadedFiles"></div>
+          </div>
+
+          <div class="form-actions">
+            <a href="/src/home-client/home-client.html"
+              ><button type="button" class="btn btn-secondary">
+                Cancel
+              </button></a
+            >
+            <button type="submit" class="btn btn-primary">
+              Create Project
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="/src/Home/addproject.js"></script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const track = document.getElementById('carouselTrack');
-  const leftBtn = document.querySelector('.carousel-btn.left');
-  const rightBtn = document.querySelector('.carousel-btn.right');
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("carouselTrack");
+  const leftBtn = document.querySelector(".carousel-btn.left");
+  const rightBtn = document.querySelector(".carousel-btn.right");
   const numVisible = 4;
 
   // Clone slides to enable infinite scroll
@@ -9,29 +9,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (track.dataset.cloned) return;
 
     const items = [...track.children];
-    const clonesBefore = items.slice(-numVisible).map(el => el.cloneNode(true)).reverse();
-    const clonesAfter = items.slice(0, numVisible).map(el => el.cloneNode(true));
+    const clonesBefore = items
+      .slice(-numVisible)
+      .map((el) => el.cloneNode(true))
+      .reverse();
+    const clonesAfter = items
+      .slice(0, numVisible)
+      .map((el) => el.cloneNode(true));
 
-    clonesBefore.forEach(clone => track.prepend(clone));
-    clonesAfter.forEach(clone => track.append(clone));
+    clonesBefore.forEach((clone) => track.prepend(clone));
+    clonesAfter.forEach((clone) => track.append(clone));
 
     track.dataset.cloned = "true";
   };
 
   // Get the full width (element + gap)
   const getSlideWidth = () => {
-    const wrapper = track.querySelector('.img-wrapper');
+    const wrapper = track.querySelector(".img-wrapper");
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
     return wrapper.offsetWidth + gap;
   };
 
   // Scroll to a position with optional smoothness
   const scrollTo = (pos, smooth = true) => {
-    track.style.scrollBehavior = smooth ? 'smooth' : 'auto';
+    track.style.scrollBehavior = smooth ? "smooth" : "auto";
     track.scrollLeft = pos;
     if (!smooth) {
       requestAnimationFrame(() => {
-        track.style.scrollBehavior = 'smooth';
+        track.style.scrollBehavior = "smooth";
       });
     }
   };
@@ -45,16 +50,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const buffer = 2;
 
     if (track.scrollLeft <= scrollMin + buffer) {
-      track.style.scrollBehavior = 'auto';
+      track.style.scrollBehavior = "auto";
       track.scrollLeft = slideWidth * realItemsCount;
       requestAnimationFrame(() => {
-        track.style.scrollBehavior = 'smooth';
+        track.style.scrollBehavior = "smooth";
       });
     } else if (track.scrollLeft >= scrollMax - buffer) {
-      track.style.scrollBehavior = 'auto';
+      track.style.scrollBehavior = "auto";
       track.scrollLeft = slideWidth * numVisible;
       requestAnimationFrame(() => {
-        track.style.scrollBehavior = 'smooth';
+        track.style.scrollBehavior = "smooth";
       });
     }
   };
@@ -66,25 +71,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initialize();
 
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     scrollTo(getSlideWidth() * numVisible, false);
   });
 
-  window.addEventListener('resize', () => {
+  window.addEventListener("resize", () => {
     scrollTo(getSlideWidth() * numVisible, false);
   });
 
-  leftBtn.addEventListener('click', () => {
+  leftBtn.addEventListener("click", () => {
     track.scrollLeft -= getSlideWidth();
     requestAnimationFrame(resetIfNeeded);
   });
 
-  rightBtn.addEventListener('click', () => {
+  rightBtn.addEventListener("click", () => {
     track.scrollLeft += getSlideWidth();
     requestAnimationFrame(resetIfNeeded);
   });
 
-  track.addEventListener('scroll', () => {
+  track.addEventListener("scroll", () => {
     requestAnimationFrame(resetIfNeeded);
   });
 });

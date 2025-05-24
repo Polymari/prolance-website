@@ -153,8 +153,8 @@ nav a:hover {
   text-align: center;
 }
 .do-step .icon {
-  height: 30px;
-  width: 30px;
+  height: 36px;
+  width: 36px;
   margin-bottom: 1rem;
   object-fit: contain;
 }
@@ -178,7 +178,6 @@ nav a:hover {
 .testimony h2 {
   color: #ef8508;
   font-size: 2rem;
-  margin-top: 1rem;
 }
 
 .testimony h2 span {
@@ -211,6 +210,11 @@ nav a:hover {
   padding: 2rem;
   margin: 2rem 20rem;
   font-size: 20px;
+  display: none;
+}
+
+.testimonial-card.active {
+  display: flex;
 }
 
 .client-photo {

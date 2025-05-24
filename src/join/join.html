@@ -16,6 +16,7 @@
       <nav>
         <a href="/src/home-guest/home-guest.html">Home</a>
         <a href="/src/client-guest/client-guest.html">Become a Client</a>
+        <a href="/src/Sign-in/sign-in.html">Sign In</a>
         <a href="/src/join/join.html">
           <button class="btn-outline">Join Us</button>
         </a>
@@ -33,10 +34,9 @@
         </div>
       </div>
       <div class="right-section">
-        <!-- Content for the right side (the form) -->
         <div class="form-container">
           <h2>Join Us</h2>
-          <form action="#" method="POST">
+          <form id="joinForm">
             <div class="form-group">
               <label for="firstName"
                 >First Name <span class="required">*</span></label
@@ -81,7 +81,6 @@
                 placeholder="Enter your password"
                 required
               />
-              <!-- Optional: Add an icon here for showing/hiding password -->
             </div>
             <div class="form-group">
               <label for="confirmPassword"
@@ -91,11 +90,29 @@
                 type="password"
                 id="confirmPassword"
                 name="confirmPassword"
-                placeholder="Enter your password"
+                placeholder="Confirm your password"
                 required
               />
-              <!-- Optional: Add an icon here for showing/hiding password -->
             </div>
+
+            <div class="role-selection">
+              <label>Choose Your Role <span class="required">*</span></label>
+              <div class="role-buttons">
+                <div class="role-option" data-role="freelancer">
+                  <div class="role-title">Freelancer</div>
+                  <div class="role-description">
+                    Offer your skills and services
+                  </div>
+                </div>
+                <div class="role-option" data-role="client">
+                  <div class="role-title">Client</div>
+                  <div class="role-description">
+                    Find and hire talented freelancers
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="terms">
               <input
                 type="checkbox"
@@ -108,20 +125,16 @@
                 <a href="#">Conditions</a></label
               >
             </div>
-            <a href="/src/home-after-join/home-after.html">
-              <button type="submit" class="join-button">Join</button>
-            </a>
+
+            <div class="error-message" id="errorMessage"></div>
+
+            <button type="submit" class="join-button" id="joinButton">
+              Join
+            </button>
           </form>
         </div>
       </div>
     </div>
-    <script>
-      document
-        .querySelector(".form-container form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          window.location.href = "../home-after-join/home-after.html";
-        });
-    </script>
   </body>
+  <script src="/src/join/join.js"></script>
 </html>
