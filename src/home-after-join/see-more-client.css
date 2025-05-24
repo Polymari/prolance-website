@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif; /* Using the project's font */
+  color: #303030;
+  background-color: #f8f8f8; /* Light grey background */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 2rem 3rem; /* Consistent padding with header/footer */
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center the content */
+}
+
+.search-sort-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.6rem 1rem;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.sort-highlight {
+  font-size: 1rem;
+  color: #f7931e;
+  border-radius: 5px;
+  border-color: white;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+  margin-top: 3rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  ); /* Responsive grid */
+  gap: 1.5rem;
+}
+
+.project-card,
+.ongoing-project-item,
+.earnings-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px 3px #a6a6a630;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(101%);
+  transition: transform 0.3s;
+}
+
+.project-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px; /* Slightly rounded corners for icon background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Background color will vary based on the icon/project */
+}
+
+.project-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* Remove extra space below image */
+}
+
+.project-info {
+  flex-grow: 1; /* Allow info to take available space */
+}
+
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ef8508; /* Orange color for titles */
+  margin-bottom: 0.3rem;
+}
+
+.project-details {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.project-time {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.ongoing-project-item:hover {
+  transform: translateY(-5px) scale(101%);
+  transition: transform 0.3s;
+}
+
+.see-more-button {
+  display: block; /* Make button take full width */
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #7d7c7c;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 10px 3px #a6a6a630;
+  margin-top: 2.5rem;
+}
+
+.see-more-button:hover {
+  background-color: #ffeea8;
+  color: #ef8508;
+}
+
+.project-list,
+.earnings-list {
+  display: grid;
+  gap: 1rem; /* Space between list items */
+}
+
+.ongoing-project-item,
+.earnings-item {
+  justify-content: space-between; /* Space out content and due date/earning */
+  align-items: center;
+}
+
+.project-due {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e74c3c; /* Red color for due dates */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.earning-amount {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2ecc71; /* Green color for earnings */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  padding: 1.25rem 3rem 1.25rem 3rem;
+}
+
+.socials {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.socials img {
+  align-items: center;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  .search-sort-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    max-width: none; /* Allow search input to take full width */
+  }
+
+  .sort-by {
+    text-align: right;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card,
+  .ongoing-project-item,
+  .earnings-item {
+    flex-direction: column; /* Stack items vertically in cards/list items */
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .project-due,
+  .earning-amount {
+    width: 100%; /* Allow due date/earning to take full width */
+    text-align: right;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+}

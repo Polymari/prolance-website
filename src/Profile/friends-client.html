@@ -21,14 +21,13 @@
     <header>
       <div class="logo">ProLance</div>
       <nav>
-        <a href="/src/home-after-join/home-after.html">Home</a>
-        <a href="/src/Networks/Networks.html">Networks</a>
-        <a href="/src/Chats/Chats.html">Chats</a>
-        <a href="/src/Notifications/Notifications.html">Notification</a>
-
+        <a href="/src/home-client/home-client.html">Home</a>
+        <a href="/src/Networks/networks-client.html">Networks</a>
+        <a href="/src/Chats/chats-client.html">Chats</a>
+        <a href="/src/Notifications/notif-client.html">Notification</a>
         <div class="profile-icon">
-          <a href="/src/Profile/profile.html"
-            ><img src="../../assets/img/profile.png" alt="profile icon"
+          <a href="/src/Profile/profile-client.html"
+            ><img src="/assets/img/profile.png" alt="profile icon"
           /></a>
         </div>
       </nav>
@@ -45,9 +44,13 @@
         <div class="name-job">
           <h1>Mitsuha Miyamizu</h1>
           <p>Website Designer</p>
-          <a href="/src/Chats/Chats.html">
-            <button id="connect-button" class="connect-button">Message</button>
-          </a>
+          <button
+            id="connect-button"
+            class="connect-button"
+            onclick="toggleButton()"
+          >
+            Connect
+          </button>
         </div>
         <div class="contact-info">
           <div>

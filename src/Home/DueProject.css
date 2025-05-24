@@ -6,7 +6,7 @@
 .sidebar {
   width: 300px;
   background: white;
-  height: 125vh;
+  height: 127vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -145,6 +145,10 @@ button:hover {
   margin-bottom: 3rem;
 }
 
+.salary {
+  color: #2ecc71;
+}
+
 .company-name {
   margin-top: 0.3rem;
   margin-left: 1rem;
@@ -260,4 +264,9 @@ b {
 .contact-person a {
   height: fit-content;
   width: fit-content;
+}
+
+.upload-history a {
+  color: #444;
+  text-decoration: underline;
 }

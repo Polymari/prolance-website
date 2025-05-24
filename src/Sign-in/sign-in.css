@@ -63,7 +63,7 @@ nav a:hover {
 .left-section {
   width: 35rem; /* Takes up available space */
   background: linear-gradient(rgba(0, 0, 0, 0.648), rgba(0, 0, 0, 0.648)),
-    url("/assets/img/Join Us.jpg");
+    url("/assets/img/Sign\ In\ Image.jpg");
   background-size: cover;
   color: white;
   display: flex;
@@ -82,22 +82,8 @@ nav a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for text */
 }
 
-.left-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.left-content li {
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for text */
-}
-
-.left-content li::before {
-  content: "✓"; /* Checkmark icon */
-  margin-right: 0.5rem;
-  color: #ef8508; /* Orange accent color */
-  font-weight: bold;
+.left-content p {
+  line-height: 1.37;
 }
 
 .right-section {
@@ -156,84 +142,19 @@ nav a:hover {
   color: red; /* Or another color to indicate required fields */
 }
 
-.role-selection {
-  margin-bottom: 1.5rem;
-  width: 100%;
-}
-
-.role-selection label {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: #444;
-  text-align: center;
-}
-
-.role-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.role-option {
-  flex: 1;
-  padding: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 12px;
-  background: white;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.3s ease;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.role-option:hover {
-  border-color: #ef8508;
-  background-color: #fff5e6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(239, 133, 8, 0.2);
-}
-
-.role-option.selected {
-  border-color: #ef8508;
-  background-color: #ef8508;
-  color: white;
-  box-shadow: 0 4px 12px rgba(239, 133, 8, 0.3);
-}
-
-.role-option .role-title {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.role-option .role-description {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-.terms {
+.forgot-password {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   width: 100%;
   align-items: flex-start;
 }
 
-.terms input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-.terms label a {
-  color: #ef8508; /* Link color */
-  text-decoration: none;
-}
-
-.terms label a:hover {
+.forgot-password a {
+  color: #ef8508;
   text-decoration: underline;
 }
 
-.join-button {
+.signin-button {
   width: 80px;
   padding: 0.75rem;
   background-color: #ef8508; /* Orange color */
@@ -247,7 +168,7 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-.join-button:hover {
+.signin-button:hover {
   background: #ffde59;
   color: #80562b;
   transition: 0.35s;
@@ -264,14 +185,6 @@ nav a:hover {
   width: fit-content;
   height: fit-content;
   align-items: center;
-}
-
-.error-message {
-  color: red;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  text-align: center;
-  display: none;
 }
 
 /* Basic responsiveness */
@@ -301,9 +214,5 @@ nav a:hover {
 
   .right-section {
     padding: 1.5rem;
-  }
-
-  .role-buttons {
-    flex-direction: column;
   }
 }
