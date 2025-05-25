@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.add("selected");
       selectedRole = this.getAttribute("data-role");
 
+      showDynamicField(selectedRole);
       updateJoinButton();
     });
   });
@@ -19,6 +20,25 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", handleFormSubmit);
   }
 });
+
+function showDynamicField(role) {
+  const freelancerField = document.getElementById("freelancerField");
+  const clientField = document.getElementById("clientField");
+
+  freelancerField.classList.remove("show");
+  clientField.classList.remove("show");
+
+  document.getElementById("freelancerCategory").value = "";
+  document.getElementById("companyName").value = "";
+
+  setTimeout(() => {
+    if (role === "freelancer") {
+      freelancerField.classList.add("show");
+    } else if (role === "client") {
+      clientField.classList.add("show");
+    }
+  }, 100);
+}
 
 function updateJoinButton() {
   const joinButton = document.getElementById("joinButton");
@@ -62,6 +82,23 @@ function handleFormSubmit(event) {
     return;
   }
 
+  if (selectedRole === "freelancer") {
+    const freelancerCategory =
+      document.getElementById("freelancerCategory").value;
+    if (!freelancerCategory) {
+      errorMessage.textContent = "Please select your freelancer category.";
+      errorMessage.style.display = "block";
+      return;
+    }
+  } else if (selectedRole === "client") {
+    const companyName = document.getElementById("companyName").value.trim();
+    if (!companyName) {
+      errorMessage.textContent = "Please enter your company name.";
+      errorMessage.style.display = "block";
+      return;
+    }
+  }
+
   if (!agreeTerms) {
     errorMessage.textContent = "Please agree to the Terms and Conditions.";
     errorMessage.style.display = "block";
@@ -70,10 +107,15 @@ function handleFormSubmit(event) {
 
   try {
     if (selectedRole === "freelancer") {
-      console.log("Redirecting to freelancer dashboard...");
+      console.log("Freelancer registration successful");
+      console.log(
+        "Category:",
+        document.getElementById("freelancerCategory").value
+      );
       window.location.href = "/src/home-after-join/home-after.html";
     } else if (selectedRole === "client") {
-      console.log("Redirecting to client dashboard...");
+      console.log("Client registration successful");
+      console.log("Company:", document.getElementById("companyName").value);
       window.location.href = "/src/home-client/home-client.html";
     }
   } catch (error) {
