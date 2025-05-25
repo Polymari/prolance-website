@@ -265,7 +265,7 @@ b {
 .finish-project {
   width: fit-content;
   padding: 0.75rem;
-  background-color: #ef8508; /* Orange color */
+  background-color: #ef8508;
   color: white;
   border: none;
   border-radius: 8px;

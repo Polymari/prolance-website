@@ -32,7 +32,6 @@ function removeSkill(skill, button) {
   }
 }
 
-// File upload functionality
 const fileUpload = document.getElementById("fileUpload");
 const fileInput = document.getElementById("projectFiles");
 const uploadedFiles = document.getElementById("uploadedFiles");
@@ -81,18 +80,14 @@ function removeFile(fileName, button) {
   }
 }
 
-// Form submission
 document.getElementById("projectForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Show success message
   const successMessage = document.getElementById("successMessage");
   successMessage.style.display = "block";
 
-  // Scroll to top
   window.scrollTo({ top: 0, behavior: "smooth" });
 
-  // Simulate redirect after 3 seconds
   setTimeout(() => {
     alert(
       "Project created successfully! In a real application, this would redirect to your projects page."
@@ -100,7 +95,6 @@ document.getElementById("projectForm").addEventListener("submit", function (e) {
   }, 3000);
 });
 
-// Auto-resize textarea
 document.getElementById("description").addEventListener("input", function () {
   this.style.height = "auto";
   this.style.height = this.scrollHeight + "px";
