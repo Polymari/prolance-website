@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/src/Admin/Dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><span>ProLance</span></div>
+    <nav>
+      <a href="#">Notification</a>
+      <a href="#"><img src="/assets/img/profile.png" alt="Profile"></a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+    <ul class="menu">
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li><a href="#">User Management</a></li>
+      <li><a href="#">Project Management</a></li>
+      <li><a href="#">Payments & Disputes</a></li>
+      <li><a href="#">Analytics & Reports</a></li>
+    </ul>
+  </div>
+
+  <div class="dashboard-container">
+    <h1>Dashboard</h1>
+    <div class="datepicker">
+        <input type="text" id="date-input" placeholder="dd/mm/yyyy" readonly>
+        <div class="calendar" id="calendar"></div>
+    </div>
+
+
+    <!-- Cards -->
+    <div class="card-grid">
+      <a href="#" class="card">
+        <h4>Total Users</h4>
+        <span><p> 1.025</p></span>
+        <p class="green">+15 from yesterday</p>
+      </a>
+      <a href="#" class="card">
+        <h4>Total Transactions</h4>
+        <span><p>Rp10.000.000,-</p></span>
+        <p class="green">+20% from yesterday</p>
+      </a>
+      <a href="#" class="card">
+        <h4>Projects Posted</h4>
+        <span><p>27</p></span>
+        <p class="green">+5 from yesterday</p>
+      </a>
+      <a href="#" class="card">
+        <h4>Pending Disputes</h4>
+        <span><p>4</p></span>
+        <p class="red">+1 new today</p>
+      </a>
+    </div>
+
+
+    <!-- Recent Update -->
+    <section class="updates">
+      <h2>Recent Update</h2>
+      <table>
+        <thead>
+          <tr><th>Action</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+        <tr class="activity">
+          <td><a href="#">Admin Lia approved withdrawal Rp 1.500.000 from @freelancer_jojo</a></td>
+          <td><a href="#">Wed, 1 May 2025 - 14:35:08</a></td>
+        </tr>
+        <tr class="activity">
+          <td><a href="#">Admin John refunded Rp 500.000 to @client_nina for canceled project</a></td>
+          <td><a href="#">Mon, 30 May 2025 - 12:00:22</a></td>
+        </tr>
+        <tr class="activity">
+          <td><a href="#">Admin Alex posted a new platform update announcement</a></td>
+          <td><a href="#">Sun, 29 May 2025 - 20:43:59</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Traffic Chart -->
+    <section class="chart-section">
+      <div class="chart-header">
+        <h2>Traffic</h2>
+        <div class="filter-buttons">
+          <div class="filter-buttons">
+            <button id="view-day" class="active">Day</button>
+            <button id="view-month">Month</button>
+            <button id="view-year">Year</button>
+          </div>
+        </div>
+        <a href=#><img src="/assets/img/save.png" alt="save-icon"></a>
+      </div>
+      <canvas id="trafficChart" height="100"></canvas>
+    </section>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/src/Admin/chart.js"></script>
+  <script src="/src/Admin/date.js"></script>
+
+</body>
+</html>
