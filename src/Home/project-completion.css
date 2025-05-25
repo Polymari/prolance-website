@@ -1,290 +1,10 @@
+/* Container and Layout */
 .container {
   display: flex;
   align-items: flex-start;
 }
 
-.sidebar {
-  width: 300px;
-  background: white;
-  height: 200vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-right: 1px solid #7d7c7c44;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  border-bottom: 1px solid #7d7c7c44;
-  padding: 16px;
-}
-.sidebar ul li:last-child {
-  border-bottom: none;
-}
-
-button:hover {
-  background-color: #ffeea8;
-  color: #f7931e;
-}
-
-.button-submit {
-  margin-left: 1.4rem;
-}
-
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 0.1rem;
-}
-
-.job-company-info {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.job-header-logo {
-  width: 48px;
-  height: 48px;
-  margin-right: 12px;
-  mix-blend-mode: multiply;
-}
-
-.job-text-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.job-detail {
-  display: none;
-}
-
-.job-detail.active {
-  display: block;
-}
-
-.upload-history {
-  list-style: none;
-  padding: 0;
-  color: #444;
-}
-
-.upload {
-  margin-left: 2rem;
-}
-
-.upload h3 {
-  margin-bottom: 1rem;
-  color: #444;
-  font-size: 18px;
-}
-
-.client {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.client-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-
-.client span {
-  margin-right: 44rem;
-}
-
-.contact-btn {
-  padding: 6px 12px;
-  background-color: white;
-  border: solid;
-  border-width: 1px;
-  color: #f7931e;
-  border-radius: 5px;
-  cursor: pointer;
-  border-color: #f7931e;
-  height: 100%;
-  margin-right: 1rem;
-}
-
-.upload-btn {
-  background-color: white;
-  color: #f7931e;
-  border: 1px solid #f7931e;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 1rem 0;
-  margin-left: 5.8rem;
-  margin-bottom: 3rem;
-}
-
-.company-name {
-  margin-top: 0.3rem;
-  margin-left: 1rem;
-  font-weight: bold;
-  color: #444;
-  font-size: 14px;
-}
-
-.job-title {
-  font-size: 40px;
-  color: #f7931e;
-  margin-left: 0.9rem;
-  margin-top: 0.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.due-time {
-  font-size: 16px;
-  color: rgb(255, 0, 0);
-  margin-top: 1.4rem;
-  margin-right: 1rem;
-}
-
-.main {
-  flex: 1;
-  padding: 20px;
-}
-
-.job-list .job {
-  padding: 15px;
-  border-left: 5px solid transparent;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.job-list .job.active {
-  background: #fff3d2;
-  border-left: 5px solid #f7931e;
-}
-
-.job-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  mix-blend-mode: multiply;
-}
-
-.job {
-  padding: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.job-content {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.job-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.job-text h4 {
-  margin-bottom: 0.3rem;
-  margin-left: 0.2rem;
-  font-size: 16px;
-  color: #f7931e;
-}
-
-.job-text p {
-  margin-bottom: 0.1rem;
-  margin-left: 0.2rem;
-  font-size: 13px;
-  color: #444;
-}
-
-pre {
-  margin-left: 1.8rem;
-  margin-top: -0.5rem;
-  color: #444;
-}
-
-b {
-  font-size: 18px;
-  margin-bottom: 0.3rem;
-}
-
-.upload-project h3 {
-  margin-left: 5.8rem;
-  font-size: 16px;
-  font-weight: 100;
-  margin-top: 1rem;
-  color: #444;
-}
-
-.contact-person {
-  margin-left: 5.8rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact-person h3 {
-  color: #444;
-}
-
-.contact-person span {
-  color: #444;
-}
-
-.contact-person a {
-  height: fit-content;
-  width: fit-content;
-}
-
-.finish-project {
-  width: fit-content;
-  padding: 0.75rem;
-  background-color: #ef8508; /* Orange color */
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Bricolage Grotesque", sans-serif;
-  margin-top: 2.5rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-}
-
-.finish-project:hover {
-  background: #ffde59;
-  color: #80562b;
-  transition: 0.35s;
-}
-
-.finish-project a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.salary {
-  color: #2ecc71;
-}
-
-.container {
-  display: flex;
-  align-items: flex-start;
-}
-
+/* Sidebar Styles */
 .sidebar {
   width: 300px;
   background: white;
@@ -306,158 +26,12 @@ b {
   border-bottom: 1px solid #7d7c7c44;
   padding: 16px;
 }
+
 .sidebar ul li:last-child {
   border-bottom: none;
 }
 
-button {
-  background-color: #f7931e;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px 3px #a6a6a630;
-  transition: background 0.3s;
-  margin-left: 70px;
-  margin-bottom: 20px;
-}
-
-button:hover {
-  background-color: #ffeea8;
-  color: #f7931e;
-}
-
-.button-submit {
-  margin-left: 1.4rem;
-}
-
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 0.1rem;
-}
-
-.job-company-info {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.job-header-logo {
-  width: 48px;
-  height: 48px;
-  margin-right: 12px;
-  mix-blend-mode: multiply;
-}
-
-.job-text-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.job-detail {
-  display: none;
-}
-
-.job-detail.active {
-  display: block;
-}
-
-.proposal-form {
-  padding: 1rem;
-}
-
-.proposal-form input,
-.proposal-form textarea {
-  width: 90%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 0.5rem;
-  border-radius: 5px;
-  border-color: #7d7c7c4d;
-  border-width: 1.5px;
-  margin-left: 1rem;
-}
-
-.proposal-form input:read-only,
-.proposal-form textarea:read-only {
-  background-color: #ededed;
-}
-
-.upload-history {
-  list-style: none;
-  padding: 0;
-  margin-left: 1rem;
-}
-
-.client {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.client-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-
-.contact-btn {
-  margin-left: auto;
-  padding: 6px 12px;
-  border: none;
-  background-color: floralwhite;
-  color: #f7931e;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.upload-btn {
-  background-color: white;
-  color: #f7931e;
-  border: 1px solid #f7931e;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 1rem 0;
-  margin-left: 1rem;
-  margin-bottom: 3rem;
-  box-shadow: none !important;
-}
-
-.company-name {
-  margin-top: 0.3rem;
-  margin-left: 1rem;
-  font-weight: bold;
-  color: #444;
-  font-size: 14px;
-}
-
-.job-title {
-  font-size: 40px;
-  color: #f7931e;
-  margin-left: 0.9rem;
-  margin-top: 0.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.time-posted {
-  font-size: 12px;
-  color: #7d7c7c;
-  margin-top: 1.5rem;
-}
-
-.main {
-  flex: 1;
-  padding: 20px;
-}
-
+/* Job List Styles */
 .job-list .job {
   padding: 15px;
   border-left: 5px solid transparent;
@@ -468,13 +42,6 @@ button:hover {
 .job-list .job.active {
   background: #fff3d2;
   border-left: 5px solid #f7931e;
-}
-
-.job-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  mix-blend-mode: multiply;
 }
 
 .job {
@@ -509,22 +76,22 @@ button:hover {
   color: #555;
 }
 
-pre {
-  margin-left: 1.8rem;
-  margin-top: -0.3rem;
-  color: #444;
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 20px;
 }
 
-b {
-  font-size: 18px;
-  margin-bottom: 0.3rem;
+/* Job Detail Sections */
+.job-detail {
+  display: none;
 }
 
-.proposal-form label {
-  margin-left: 1rem;
-  color: #444;
+.job-detail.active {
+  display: block;
 }
 
+/* Submit Header */
 .submit-header {
   margin-left: 2rem;
   margin-top: 1.5rem;
@@ -532,6 +99,50 @@ b {
   color: #444;
 }
 
+/* Proposal Form */
+.proposal-form {
+  padding: 1rem;
+}
+
+.proposal-form input,
+.proposal-form textarea {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border-color: #7d7c7c4d;
+  border-width: 1.5px;
+  margin-left: 1rem;
+}
+
+.proposal-form input:read-only,
+.proposal-form textarea:read-only {
+  background-color: #ededed;
+}
+
+.proposal-form label {
+  margin-left: 1rem;
+  color: #444;
+}
+
+/* Upload Section */
+.upload {
+  margin-left: 2rem;
+}
+
+.upload h3 {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 18px;
+}
+
+.upload a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* Review Section */
 .review-section {
   margin-left: 2rem;
   margin-top: 1rem;
@@ -581,6 +192,13 @@ b {
   color: #ffde59;
 }
 
+.rating-display {
+  margin-left: 1rem;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
 .review-form {
   display: flex;
   flex-direction: column;
@@ -611,14 +229,30 @@ b {
   box-shadow: 0 0 0 2px rgba(247, 147, 30, 0.1);
 }
 
-.rating-display {
-  margin-left: 1rem;
-  color: #666;
-  font-size: 14px;
-  font-style: italic;
+/* Finish Project Button */
+.finish-project {
+  width: fit-content;
+  padding: 0.75rem;
+  background-color: #ef8508;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
-.upload a {
-  color: #444;
-  text-decoration: underline;
+.finish-project:hover {
+  background: #ffde59;
+  color: #80562b;
+  transition: 0.35s;
+}
+
+.finish-project a {
+  text-decoration: none;
+  color: #ffffff;
 }

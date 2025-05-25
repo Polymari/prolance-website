@@ -46,6 +46,10 @@ aside {
   font-size: 1.5rem;
 }
 
+.avatar img {
+  border-radius: 50%;
+}
+
 .content {
   position: relative;
   top: 1.5rem;
@@ -129,6 +133,13 @@ aside {
   width: 85%;
   border: 1px solid #ccc;
   border-radius: 8px;
+}
+
+.search-sort input:focus {
+  outline: none;
+  border-color: #ffe162;
+  box-shadow: 0 0 0 3px rgba(255, 225, 98, 0.1);
+  transform: translateY(-1px);
 }
 
 .sort-by {

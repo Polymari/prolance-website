@@ -52,6 +52,11 @@ main.notification-page {
   position: relative;
 }
 
+.notification-card:hover {
+  transform: translateY(-1px) scale(100.7%);
+  transition: transform 0.3s;
+}
+
 .first {
   margin-top: 1rem;
 }

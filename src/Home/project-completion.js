@@ -1,20 +1,16 @@
 let selectedRating = 0;
 
-// Job switching functionality
 function showJob(event, jobId) {
-  // Remove active class from all jobs
   const jobs = document.querySelectorAll(".job");
   const jobDetails = document.querySelectorAll(".job-detail");
 
   jobs.forEach((job) => job.classList.remove("active"));
   jobDetails.forEach((detail) => detail.classList.remove("active"));
 
-  // Add active class to clicked job and corresponding detail
   event.currentTarget.classList.add("active");
   document.getElementById(jobId).classList.add("active");
 }
 
-// Star rating functionality
 const stars = document.querySelectorAll(".star");
 const ratingDisplay = document.getElementById("ratingDisplay");
 
@@ -72,12 +68,10 @@ function submitReview() {
     return;
   }
 
-  // Here you would typically send the review data to your server
   alert(
     `Review submitted!\nRating: ${selectedRating} stars\nReview: ${reviewText}`
   );
 
-  // Reset the form
   selectedRating = 0;
   updateStarDisplay();
   updateRatingText();
