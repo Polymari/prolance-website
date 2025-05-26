@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management | ProLance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Admin/user.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="mobile-menu-toggle" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo" onclick="refreshDashboard()">ProLance</div>
+      </div>
+      <div class="header-right">
+        <a href="/src/Admin/notif.html"
+          ><div class="notification">Notification</div></a
+        >
+        <div class="user-icon" onclick="showUserMenu()">
+          <img src="/assets/img/profile.png" alt="Profile" />
+        </div>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <nav class="sidebar" id="sidebar">
+        <a href="/src/Admin/Dashboard.html"
+          ><div class="sidebar-item">Dashboard</div></a
+        >
+        <a href="/src/Admin/user.html"
+          ><div class="sidebar-item active">User Management</div></a
+        >
+        <a href="/src/Admin/project.html"
+          ><div class="sidebar-item">Project Management</div></a
+        >
+        <a href="/src/Admin/payment.html"
+          ><div class="sidebar-item">Payments & Disputes</div></a
+        >
+        <a href="/src/Admin/analytics.html"
+          ><div class="sidebar-item">Analytics & Reports</div></a
+        >
+      </nav>
+
+      <main class="content">
+        <div class="reports-section">
+          <div class="reports-header">
+            <div class="reports-title">All Users</div>
+          </div>
+
+          <table class="reports-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Username ↕️</th>
+                <th onclick="sortTable(1)">Date Joined ↕️</th>
+                <th onclick="sortTable(2)">Actions ↕️</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody">
+              <tr onclick="showReportDetails(1)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 1
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(2)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 2
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(3)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 3
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(4)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 4
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(5)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 5
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(6)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 6
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(7)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 7
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(8)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 8
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(9)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 9
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+              <tr onclick="showReportDetails(10)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    User 10
+                  </div>
+                </td>
+                <td>May 1st 2025 11:45</td>
+                <td>
+                  <select name="UserActions" id="Actions">
+                    <option value="safe">Safe</option>
+                    <option value="suspend">Suspend</option>
+                    <option value="ban">Ban</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="/src/Admin/user.js"></script>
+  </body>
+</html>

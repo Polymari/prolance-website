@@ -33,20 +33,3 @@ function refreshDashboard() {
     projectCount.classList.remove("loading");
   }, 1000);
 }
-
-function updateDropdownStyle(selectElement) {
-  const selectedValue = selectElement.value;
-  selectElement.setAttribute("data-status", selectedValue);
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdowns = document.querySelectorAll('select[name="UserActions"]');
-
-  dropdowns.forEach((dropdown) => {
-    updateDropdownStyle(dropdown);
-
-    dropdown.addEventListener("change", function () {
-      updateDropdownStyle(this);
-    });
-  });
-});
