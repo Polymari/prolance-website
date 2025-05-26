@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/Admin/project.css" />
+    <link rel="stylesheet" href="/src/Admin/payment.css" />
   </head>
   <body>
     <header class="header">
@@ -39,10 +39,10 @@
           ><div class="sidebar-item">User Management</div></a
         >
         <a href="/src/Admin/project.html"
-          ><div class="sidebar-item active">Project Management</div></a
+          ><div class="sidebar-item">Project Management</div></a
         >
         <a href="/src/Admin/payment.html"
-          ><div class="sidebar-item">Payments & Disputes</div></a
+          ><div class="sidebar-item active">Payments & Disputes</div></a
         >
         <a href="/src/Admin/analytics.html"
           ><div class="sidebar-item">Analytics & Reports</div></a
@@ -52,66 +52,109 @@
       <main class="content">
         <div class="card-grid">
           <a href="#" class="card">
-            <h4>Posted Projects</h4>
-            <span><p>27</p></span>
-            <p class="green">+5 from yesterday</p>
-          </a>
-          <a href="#" class="card">
-            <h4>Ongoing Projects</h4>
-            <span><p>8</p></span>
+            <h4>Total Transactions</h4>
+            <span><p>5</p></span>
             <p class="green">+3 from yesterday</p>
           </a>
           <a href="#" class="card">
-            <h4>Completed Projects</h4>
-            <span><p>5</p></span>
+            <h4>Pending Disputes</h4>
+            <span><p>2</p></span>
+            <p class="red">+1 new today</p>
+          </a>
+          <a href="#" class="card">
+            <h4>Completed Disputes</h4>
+            <span><p>2</p></span>
             <p class="green">+1 from yesterday</p>
           </a>
         </div>
 
         <div class="reports-section">
           <div class="reports-header">
-            <div class="reports-title">All Projects</div>
+            <div class="reports-title">Transactions</div>
           </div>
 
           <table class="reports-table">
             <thead>
               <tr>
-                <th onclick="sortTable(0)">Project Name ↕️</th>
+                <th onclick="sortTable(0)">Company Name ↕️</th>
+                <th onclick="sortTable(1)">Payment for ↕️</th>
+                <th onclick="sortTable(2)">Payment Amount ↕️</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody">
+              <tr onclick="showReportDetails(1)">
+                <td>Company 1</td>
+                <td>Freelancer 1</td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(2)">
+                <td>Company 2</td>
+                <td>Freelancer 2</td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(3)">
+                <td>Company 3</td>
+                <td>Freelancer 3</td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(4)">
+                <td>Company 4</td>
+                <td>Freelancer 4</td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(5)">
+                <td>Company 5</td>
+                <td>Freelancer 5</td>
+                <td class="green">$100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reports-section2">
+          <div class="reports-header">
+            <div class="reports-title">Disputes</div>
+          </div>
+
+          <table class="reports-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Subject ↕️</th>
                 <th onclick="sortTable(1)">Details ↕️</th>
-                <th onclick="sortTable(2)">Uploaded Date ↕️</th>
+                <th onclick="sortTable(2)">Upload Date ↕️</th>
                 <th onclick="sortTable(3)">Status ↕️</th>
               </tr>
             </thead>
             <tbody id="reportsTableBody">
               <tr onclick="showReportDetails(1)">
-                <td>Project 1</td>
+                <td>Subject 1</td>
                 <td>Details 1</td>
                 <td>May 1st 2025 11:45</td>
-                <td class="posted">Searching Candidates</td>
+                <td class="red">Pending</td>
               </tr>
               <tr onclick="showReportDetails(2)">
-                <td>Project 2</td>
+                <td>Subject 2</td>
                 <td>Details 2</td>
                 <td>May 1st 2025 11:45</td>
-                <td class="posted">Searching Candidates</td>
+                <td class="red">Pending</td>
               </tr>
               <tr onclick="showReportDetails(3)">
-                <td>Project 3</td>
+                <td>Subject 3</td>
                 <td>Details 3</td>
                 <td>May 1st 2025 11:45</td>
-                <td class="completed">Completed</td>
+                <td class="green">Completed</td>
               </tr>
               <tr onclick="showReportDetails(4)">
-                <td>Project 4</td>
+                <td>Subject 4</td>
                 <td>Details 4</td>
                 <td>May 1st 2025 11:45</td>
-                <td class="ongoing">Ongoing</td>
+                <td class="green">Completed</td>
               </tr>
             </tbody>
           </table>
         </div>
       </main>
     </div>
-    <script src="/src/Admin/project.js"></script>
+    <script src="/src/Admin/payment.js"></script>
   </body>
 </html>

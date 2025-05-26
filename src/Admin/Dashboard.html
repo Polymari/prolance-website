@@ -21,9 +21,9 @@
         <div class="logo" onclick="refreshDashboard()">ProLance</div>
       </div>
       <div class="header-right">
-        <div class="notification" onclick="showNotifications()">
-          Notification
-        </div>
+        <a href="/src/Admin/notif.html"
+          ><div class="notification">Notification</div></a
+        >
         <div class="user-icon" onclick="showUserMenu()">
           <img src="/assets/img/profile.png" alt="Profile" />
         </div>
@@ -35,11 +35,15 @@
         <a href="/src/Admin/Dashboard.html"
           ><div class="sidebar-item active">Dashboard</div></a
         >
-        <a href=""><div class="sidebar-item">User Management</div></a>
+        <a href="/src/Admin/user.html"
+          ><div class="sidebar-item">User Management</div></a
+        >
         <a href="/src/Admin/project.html"
           ><div class="sidebar-item">Project Management</div></a
         >
-        <a href=""><div class="sidebar-item">Payments & Disputes</div></a>
+        <a href="/src/Admin/payment.html"
+          ><div class="sidebar-item">Payments & Disputes</div></a
+        >
         <a href="/src/Admin/analytics.html"
           ><div class="sidebar-item">Analytics & Reports</div></a
         >
@@ -61,24 +65,24 @@
 
           <!-- Cards -->
           <div class="card-grid">
-            <a href="#" class="card">
+            <a href="/src/Admin/user.html" class="card">
               <h4>Total Users</h4>
               <span><p>1,025</p></span>
               <p class="green">+15 from yesterday</p>
             </a>
-            <a href="#" class="card">
+            <a href="/src/Admin/payment.html" class="card">
               <h4>Total Transactions</h4>
-              <span><p>Rp10,000,000</p></span>
-              <p class="green">+20% from yesterday</p>
+              <span><p>5</p></span>
+              <p class="green">+3 from yesterday</p>
             </a>
-            <a href="#" class="card">
+            <a href="/src/Admin/project.html" class="card">
               <h4>Projects Posted</h4>
               <span><p>27</p></span>
               <p class="green">+5 from yesterday</p>
             </a>
-            <a href="#" class="card">
+            <a href="/src/Admin/payment.html" class="card">
               <h4>Pending Disputes</h4>
-              <span><p>4</p></span>
+              <span><p>2</p></span>
               <p class="red">+1 new today</p>
             </a>
           </div>
@@ -96,29 +100,41 @@
               <tbody>
                 <tr class="activity">
                   <td>
-                    <a href="#"
+                    <a href="/src/Admin/notif.html"
                       >Admin Lia approved withdrawal Rp 1,500,000 from
                       @freelancer_jojo</a
                     >
                   </td>
-                  <td><a href="#">Wed, 1 May 2025 - 14:35:08</a></td>
+                  <td>
+                    <a href="/src/Admin/notif.html"
+                      >Wed, 1 May 2025 - 14:35:08</a
+                    >
+                  </td>
                 </tr>
                 <tr class="activity">
                   <td>
-                    <a href="#"
+                    <a href="/src/Admin/notif.html"
                       >Admin John refunded Rp 500,000 to @client_nina for
                       canceled project</a
                     >
                   </td>
-                  <td><a href="#">Mon, 30 Apr 2025 - 12:00:22</a></td>
+                  <td>
+                    <a href="/src/Admin/notif.html"
+                      >Mon, 30 Apr 2025 - 12:00:22</a
+                    >
+                  </td>
                 </tr>
                 <tr class="activity">
                   <td>
-                    <a href="#"
+                    <a href="/src/Admin/notif.html"
                       >Admin Alex posted a new platform update announcement</a
                     >
                   </td>
-                  <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+                  <td>
+                    <a href="/src/Admin/notif.html"
+                      >Sun, 28 Apr 2025 - 20:43:59</a
+                    >
+                  </td>
                 </tr>
               </tbody>
             </table>
