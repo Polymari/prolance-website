@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments & Disputes | ProLance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Admin/payment.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="mobile-menu-toggle" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo" onclick="refreshDashboard()">ProLance</div>
+      </div>
+      <div class="header-right">
+        <a href="/src/Admin/notif.html"
+          ><div class="notification">Notification</div></a
+        >
+        <div class="user-icon" onclick="showUserMenu()">
+          <img src="/assets/img/profile.png" alt="Profile" />
+        </div>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <nav class="sidebar" id="sidebar">
+        <a href="/src/Admin/Dashboard.html"
+          ><div class="sidebar-item">Dashboard</div></a
+        >
+        <a href="/src/Admin/user.html"
+          ><div class="sidebar-item">User Management</div></a
+        >
+        <a href="/src/Admin/project.html"
+          ><div class="sidebar-item">Project Management</div></a
+        >
+        <a href="/src/Admin/payment.html"
+          ><div class="sidebar-item active">Payments & Disputes</div></a
+        >
+        <a href="/src/Admin/analytics.html"
+          ><div class="sidebar-item">Analytics & Reports</div></a
+        >
+      </nav>
+
+      <main class="content">
+        <div class="card-grid">
+          <a href="#" class="card">
+            <h4>Total Transactions</h4>
+            <span><p>5</p></span>
+            <p class="green">+3 from yesterday</p>
+          </a>
+          <a href="#" class="card">
+            <h4>Pending Disputes</h4>
+            <span><p>2</p></span>
+            <p class="red">+1 new today</p>
+          </a>
+          <a href="#" class="card">
+            <h4>Completed Disputes</h4>
+            <span><p>2</p></span>
+            <p class="green">+1 from yesterday</p>
+          </a>
+        </div>
+
+        <div class="reports-section">
+          <div class="reports-header">
+            <div class="reports-title">Transactions</div>
+          </div>
+
+          <table class="reports-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Company Name ↕️</th>
+                <th onclick="sortTable(1)">Payment for ↕️</th>
+                <th onclick="sortTable(2)">Payment Amount ↕️</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody">
+              <tr onclick="showReportDetails(1)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar">
+                      <img
+                        src="/assets/img/Placeholder Logo.jpg"
+                        alt="company"
+                      />
+                    </div>
+                    Company 1
+                  </div>
+                </td>
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    Freelancer 1
+                  </div>
+                </td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(2)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar">
+                      <img
+                        src="/assets/img/Placeholder Logo.jpg"
+                        alt="company"
+                      />
+                    </div>
+                    Company 2
+                  </div>
+                </td>
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    Freelancer 2
+                  </div>
+                </td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(3)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar">
+                      <img
+                        src="/assets/img/Placeholder Logo.jpg"
+                        alt="company"
+                      />
+                    </div>
+                    Company 3
+                  </div>
+                </td>
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    Freelancer 3
+                  </div>
+                </td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(4)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar">
+                      <img
+                        src="/assets/img/Placeholder Logo.jpg"
+                        alt="company"
+                      />
+                    </div>
+                    Company 4
+                  </div>
+                </td>
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    Freelancer 4
+                  </div>
+                </td>
+                <td class="green">$100</td>
+              </tr>
+              <tr onclick="showReportDetails(5)">
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar">
+                      <img
+                        src="/assets/img/Placeholder Logo.jpg"
+                        alt="company"
+                      />
+                    </div>
+                    Company 5
+                  </div>
+                </td>
+                <td>
+                  <div class="user-info">
+                    <div class="user-avatar"></div>
+                    Freelancer 5
+                  </div>
+                </td>
+                <td class="green">$100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reports-section2">
+          <div class="reports-header">
+            <div class="reports-title">Disputes</div>
+          </div>
+
+          <table class="reports-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0)">Subject ↕️</th>
+                <th onclick="sortTable(1)">Details ↕️</th>
+                <th onclick="sortTable(2)">Upload Date ↕️</th>
+                <th onclick="sortTable(3)">Status ↕️</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody">
+              <tr onclick="showReportDetails(1)">
+                <td>Subject 1</td>
+                <td>Details 1</td>
+                <td>May 1st 2025 11:45</td>
+                <td class="red">Pending</td>
+              </tr>
+              <tr onclick="showReportDetails(2)">
+                <td>Subject 2</td>
+                <td>Details 2</td>
+                <td>May 1st 2025 11:45</td>
+                <td class="red">Pending</td>
+              </tr>
+              <tr onclick="showReportDetails(3)">
+                <td>Subject 3</td>
+                <td>Details 3</td>
+                <td>May 1st 2025 11:45</td>
+                <td class="green">Completed</td>
+              </tr>
+              <tr onclick="showReportDetails(4)">
+                <td>Subject 4</td>
+                <td>Details 4</td>
+                <td>May 1st 2025 11:45</td>
+                <td class="green">Completed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="/src/Admin/payment.js"></script>
+  </body>
+</html>

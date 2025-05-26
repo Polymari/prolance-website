@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications | ProLance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/Admin/notif.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="mobile-menu-toggle" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo" onclick="refreshDashboard()">ProLance</div>
+      </div>
+      <div class="header-right">
+        <a href="/src/Admin/notif.html"
+          ><div class="notification">Notification</div></a
+        >
+        <div class="user-icon" onclick="showUserMenu()">
+          <img src="/assets/img/profile.png" alt="Profile" />
+        </div>
+      </div>
+    </header>
+
+    <div class="main-layout">
+      <nav class="sidebar" id="sidebar">
+        <a href="/src/Admin/Dashboard.html"
+          ><div class="sidebar-item">Dashboard</div></a
+        >
+        <a href="/src/Admin/user.html"
+          ><div class="sidebar-item">User Management</div></a
+        >
+        <a href="/src/Admin/project.html"
+          ><div class="sidebar-item">Project Management</div></a
+        >
+        <a href="/src/Admin/payment.html"
+          ><div class="sidebar-item">Payments & Disputes</div></a
+        >
+        <a href="/src/Admin/analytics.html"
+          ><div class="sidebar-item">Analytics & Reports</div></a
+        >
+      </nav>
+
+      <main class="content">
+        <section class="updates">
+          <h2>All Notifications</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Notification Details</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    ><b
+                      >Admin Lia approved withdrawal Rp 1,500,000 from
+                      @freelancer_jojo</b
+                    ></a
+                  >
+                </td>
+                <td>
+                  <a href="#"><b>Wed, 1 May 2025 - 14:35:08</b></a>
+                </td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    ><b
+                      >Admin John refunded Rp 500,000 to @client_nina for
+                      canceled project</b
+                    ></a
+                  >
+                </td>
+                <td>
+                  <a href="#"><b>Mon, 30 Apr 2025 - 12:00:22</b></a>
+                </td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    ><b
+                      >Admin Alex posted a new platform update announcement</b
+                    ></a
+                  >
+                </td>
+                <td>
+                  <a href="#"><b>Sun, 28 Apr 2025 - 20:43:59</b></a>
+                </td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+              <tr class="activity">
+                <td>
+                  <a href="#"
+                    >Admin Alex posted a new platform update announcement</a
+                  >
+                </td>
+                <td><a href="#">Sun, 28 Apr 2025 - 20:43:59</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="/src/Admin/notif.js"></script>
+  </body>
+</html>
