@@ -336,6 +336,58 @@ a {
   height: 20px;
 }
 
+.profile-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon img {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.profile-dropdown.show {
+  display: block;
+}
+
+.profile-dropdown a {
+  color: #303030;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f1f1f1;
+  color: #ef8508;
+}
+
+.profile-dropdown a:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.profile-dropdown a:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
 @media (max-width: 768px) {
   header {
     padding: 1rem;

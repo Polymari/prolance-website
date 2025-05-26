@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | ProLance</title>
+    <link rel="stylesheet" href="/src/home-client/faq.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><span>ProLance</span></div>
+      <nav>
+        <a href="/src/home-client/home-client.html">Home</a>
+        <a href="/src/Networks/networks-client.html">Networks</a>
+        <a href="/src/Chats/chats-client.html">Chats</a>
+        <a href="/src/Notifications/notif-client.html">Notification</a>
+        <div class="profile-icon">
+          <img
+            src="/assets/img/profile2.jpg"
+            alt="profile icon"
+            id="profileImg"
+          />
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/src/Profile/profile-client.html">View Profile</a>
+            <a href="/src/home-client/faq-client.html">FAQ/Help</a>
+            <a href="/src/home-guest/home-guest.html" onclick="logout()"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main-layout">
+      <main class="content">
+        <div class="page-header">
+          <h1 class="page-title">Help & Support</h1>
+          <p class="page-subtitle">
+            Find answers to your questions or get in touch with our support team
+          </p>
+        </div>
+
+        <div class="help-tabs">
+          <button class="tab-btn active" onclick="showTab('faq')">FAQ</button>
+          <button class="tab-btn" onclick="showTab('contact')">
+            Contact Support
+          </button>
+          <button class="tab-btn" onclick="showTab('report')">
+            Report Issue
+          </button>
+        </div>
+
+        <!-- FAQ Tab -->
+        <div id="faq" class="tab-content active">
+          <div class="faq-section">
+            <div class="faq-search">
+              <input
+                type="text"
+                class="search-box"
+                placeholder="Search for answers..."
+                onkeyup="searchFAQ(this.value)"
+              />
+            </div>
+
+            <div class="faq-categories">
+              <div class="faq-category" onclick="filterFAQ('account')">
+                <h3>Account & Profile</h3>
+                <p>
+                  Manage your account settings, profile information, and
+                  security
+                </p>
+              </div>
+              <div class="faq-category" onclick="filterFAQ('projects')">
+                <h3>Projects & Hiring</h3>
+                <p>
+                  Learn about posting projects, finding freelancers, and
+                  managing work
+                </p>
+              </div>
+              <div class="faq-category" onclick="filterFAQ('payments')">
+                <h3>Payments & Billing</h3>
+                <p>
+                  Understand payment methods, invoicing, and financial
+                  transactions
+                </p>
+              </div>
+              <div class="faq-category" onclick="filterFAQ('disputes')">
+                <h3>Disputes & Resolution</h3>
+                <p>Get help with resolving conflicts and dispute management</p>
+              </div>
+            </div>
+
+            <div class="faq-items" id="faqItems">
+              <div class="faq-item" data-category="account">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How do I update my profile information?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  To update your profile information, go to your account
+                  settings from the user menu in the top right corner. Click on
+                  "Profile Settings" and you can edit your personal information,
+                  skills, portfolio, and other details.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="account">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How do I change my password?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Navigate to Account Settings > Security. Click on "Change
+                  Password" and enter your current password followed by your new
+                  password. Make sure your new password is strong and unique.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="projects">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How do I post a new project?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Click on "Post a Project" from your dashboard. Fill out the
+                  project details including title, description, budget,
+                  timeline, and required skills. Review your information and
+                  publish to start receiving proposals from freelancers.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="projects">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How do I select the right freelancer?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Review proposals carefully, check freelancer profiles,
+                  ratings, and previous work samples. Consider their
+                  communication skills, proposed timeline, and budget. You can
+                  also conduct interviews before making your final decision.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="payments">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  What payment methods are accepted?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  We accept major credit cards, PayPal, bank transfers, and
+                  various digital payment methods. You can add or update your
+                  payment methods in the billing section of your account
+                  settings.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="payments">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How does the escrow system work?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Our escrow system holds your payment securely until the work
+                  is completed satisfactorily. Funds are released to the
+                  freelancer only after you approve the delivered work, ensuring
+                  protection for both parties.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="disputes">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  What should I do if there's a problem with my project?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  First, try to resolve the issue directly with the freelancer
+                  through our messaging system. If that doesn't work, you can
+                  open a dispute through the project page, and our mediation
+                  team will help resolve the matter fairly.
+                </div>
+              </div>
+
+              <div class="faq-item" data-category="disputes">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  How long does dispute resolution take?
+                  <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                  Most disputes are resolved within 5-7 business days. Complex
+                  cases may take longer. Our mediation team reviews all evidence
+                  and communications to make fair decisions based on our terms
+                  of service.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Support Tab -->
+        <div id="contact" class="tab-content">
+          <div class="contact-section">
+            <h2 style="color: #ff8c00; margin-bottom: 2rem; text-align: center">
+              Get in Touch
+            </h2>
+            <div class="contact-grid">
+              <div class="contact-method">
+                <div class="contact-icon">📧</div>
+                <h3>Email Support</h3>
+                <p>Get help via email within 24 hours</p>
+                <p style="color: #ff8c00; font-weight: 600; margin-top: 1rem">
+                  support@prolance.com
+                </p>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">💬</div>
+                <h3>Live Chat</h3>
+                <p>Chat with our support team in real-time</p>
+                <p style="color: #666; margin-top: 1rem">
+                  Available 9 AM - 6 PM EST
+                </p>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">📞</div>
+                <h3>Phone Support</h3>
+                <p>Speak directly with our support specialists</p>
+                <p style="color: #ff8c00; font-weight: 600; margin-top: 1rem">
+                  1-800-PROLANCE
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Report Issue Tab -->
+        <div id="report" class="tab-content">
+          <div class="report-form">
+            <h2 style="color: #ff8c00; margin-bottom: 2rem">Report an Issue</h2>
+            <form onsubmit="submitReport(event)">
+              <div class="form-group">
+                <label class="form-label">Issue Type</label>
+                <select class="form-select" required>
+                  <option value="">Select issue type...</option>
+                  <option value="technical">Technical Problem</option>
+                  <option value="payment">Payment Issue</option>
+                  <option value="account">Account Problem</option>
+                  <option value="project">Project Related</option>
+                  <option value="abuse">Report Abuse</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Priority Level</label>
+                <select class="form-select" required>
+                  <option value="">Select priority...</option>
+                  <option value="low">Low - General inquiry</option>
+                  <option value="medium">Medium - Affects my work</option>
+                  <option value="high">High - Urgent issue</option>
+                  <option value="critical">Critical - System down</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Brief description of the issue"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Detailed Description</label>
+                <textarea
+                  class="form-textarea"
+                  placeholder="Please provide as much detail as possible about the issue you're experiencing..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"
+                  >Project/User ID (if applicable)</label
+                >
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Enter relevant ID if this relates to a specific project or user"
+                />
+              </div>
+
+              <button type="submit" class="submit-btn">Submit Report</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>© ProLance 2025</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/?locale=id_ID"
+          ><img src="/assets/img/facebook.png" alt="facebook icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/instagram.png" alt="instagram icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="/assets/img/linkedin.png" alt="linkedin icon"
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="/src/home-client/profiledrop.js"></script>
+  <script src="/src/home-client/faq.js"></script>
+</html>

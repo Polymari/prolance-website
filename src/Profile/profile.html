@@ -26,9 +26,18 @@
         <a href="/src/Notifications/Notifications.html">Notification</a>
 
         <div class="profile-icon">
-          <a href="/src/Profile/profile.html"
-            ><img src="/assets/img/profile2.jpg" alt="profile icon"
-          /></a>
+          <img
+            src="/assets/img/profile2.jpg"
+            alt="profile icon"
+            id="profileImg"
+          />
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/src/Profile/profile.html">View Profile</a>
+            <a href="/src/home-client/faq.html">FAQ/Help</a>
+            <a href="/src/home-guest/home-guest.html" onclick="logout()"
+              >Logout</a
+            >
+          </div>
         </div>
       </nav>
     </header>
@@ -215,5 +224,6 @@
         /></a>
       </div>
     </footer>
+    <script src="/src/home-client/profiledrop.js"></script>
   </body>
 </html>
