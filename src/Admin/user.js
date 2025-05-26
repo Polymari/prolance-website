@@ -33,3 +33,23 @@ function refreshDashboard() {
     projectCount.classList.remove("loading");
   }, 1000);
 }
+
+function updateDropdownStyle(selectElement) {
+  const selectedValue = selectElement.value;
+  selectElement.setAttribute("data-status", selectedValue);
+}
+
+// Initialize all dropdowns with default styling and add event listeners
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll('select[name="UserActions"]');
+
+  dropdowns.forEach((dropdown) => {
+    // Set initial status (default to 'safe')
+    updateDropdownStyle(dropdown);
+
+    // Add change event listener
+    dropdown.addEventListener("change", function () {
+      updateDropdownStyle(this);
+    });
+  });
+});
