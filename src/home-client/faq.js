@@ -4,20 +4,16 @@ function toggleSidebar() {
 }
 
 function showTab(tabName) {
-  // Hide all tab contents
   document.querySelectorAll(".tab-content").forEach((content) => {
     content.classList.remove("active");
   });
 
-  // Remove active class from all tab buttons
   document.querySelectorAll(".tab-btn").forEach((btn) => {
     btn.classList.remove("active");
   });
 
-  // Show selected tab content
   document.getElementById(tabName).classList.add("active");
 
-  // Add active class to clicked button
   event.target.classList.add("active");
 }
 
@@ -62,7 +58,6 @@ function filterFAQ(category) {
   faqItems.forEach((item) => {
     if (item.dataset.category === category) {
       item.style.display = "block";
-      item.style.background = "#fff3e0";
       setTimeout(() => {
         item.style.background = "white";
       }, 1000);
@@ -71,14 +66,12 @@ function filterFAQ(category) {
     }
   });
 
-  // Clear search box
   document.querySelector(".search-box").value = "";
 }
 
 function submitReport(event) {
   event.preventDefault();
 
-  // Simulate form submission
   const submitBtn = event.target.querySelector(".submit-btn");
   const originalText = submitBtn.textContent;
 
@@ -96,13 +89,10 @@ function submitReport(event) {
 }
 
 function refreshDashboard() {
-  // Simulate dashboard refresh
   console.log("Refreshing dashboard...");
 }
 
-// Add some interactive enhancements
 document.addEventListener("DOMContentLoaded", function () {
-  // Add hover effects to cards
   const cards = document.querySelectorAll(".faq-category, .contact-method");
   cards.forEach((card) => {
     card.addEventListener("mouseenter", function () {

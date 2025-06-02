@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const leftBtn = document.querySelector(".carousel-btn.left");
   const rightBtn = document.querySelector(".carousel-btn.right");
   const numVisible = 4;
+  let autoplayInterval;
 
-  // Clone slides to enable infinite scroll
   const cloneSlides = () => {
     if (track.dataset.cloned) return;
 
@@ -23,14 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
     track.dataset.cloned = "true";
   };
 
-  // Get the full width (element + gap)
   const getSlideWidth = () => {
     const wrapper = track.querySelector(".img-wrapper");
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
     return wrapper.offsetWidth + gap;
   };
 
-  // Scroll to a position with optional smoothness
   const scrollTo = (pos, smooth = true) => {
     track.style.scrollBehavior = smooth ? "smooth" : "auto";
     track.scrollLeft = pos;
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Reset scroll position if it's at the edge (looping logic)
   const resetIfNeeded = () => {
     const slideWidth = getSlideWidth();
     const realItemsCount = track.children.length - numVisible * 2;
@@ -64,9 +61,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  const startAutoplay = () => {
+    autoplayInterval = setInterval(() => {
+      track.scrollLeft += getSlideWidth();
+      requestAnimationFrame(resetIfNeeded);
+    }, 4000);
+  };
+
+  const stopAutoplay = () => {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
+    }
+  };
+
+  const restartAutoplay = () => {
+    stopAutoplay();
+    startAutoplay();
+  };
+
   const initialize = () => {
     cloneSlides();
     scrollTo(getSlideWidth() * numVisible, false);
+    startAutoplay();
   };
 
   initialize();
@@ -82,14 +99,19 @@ document.addEventListener("DOMContentLoaded", () => {
   leftBtn.addEventListener("click", () => {
     track.scrollLeft -= getSlideWidth();
     requestAnimationFrame(resetIfNeeded);
+    restartAutoplay();
   });
 
   rightBtn.addEventListener("click", () => {
     track.scrollLeft += getSlideWidth();
     requestAnimationFrame(resetIfNeeded);
+    restartAutoplay();
   });
 
   track.addEventListener("scroll", () => {
     requestAnimationFrame(resetIfNeeded);
   });
+
+  track.addEventListener("mouseenter", stopAutoplay);
+  track.addEventListener("mouseleave", startAutoplay);
 });

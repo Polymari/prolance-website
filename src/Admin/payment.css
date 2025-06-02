@@ -91,7 +91,6 @@ a {
 }
 
 .user-icon:hover {
-  background-color: #ff8c00;
   transform: scale(1.1);
 }
 
@@ -147,21 +146,6 @@ a {
   flex: 1;
   padding: 2rem;
   background-color: #f5f5f5;
-}
-
-.dashboard-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: #f5f5f5;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #ff8c00;
-  font-weight: bold;
-  text-align: left;
 }
 
 .card-grid {
@@ -358,20 +342,6 @@ h1 {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.loading {
-  animation: pulse 2s infinite;
-}
-
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -385,4 +355,32 @@ h1 {
   background: #333;
   margin: 3px 0;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100vh;
+    z-index: 200;
+    top: 0;
+    left: 0;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    padding: 1rem;
+  }
 }

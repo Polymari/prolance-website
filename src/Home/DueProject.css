@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   align-items: flex-start;
@@ -6,7 +10,7 @@
 .sidebar {
   width: 300px;
   background: white;
-  height: 127vh;
+  height: 130vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -28,7 +32,63 @@
   border-bottom: none;
 }
 
+.job-list .job {
+  padding: 15px;
+  border-left: 5px solid transparent;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px 0 0 8px;
+  transition: all 0.3s ease;
+}
+
+.job-list .job:hover {
+  background: #f8f9fa;
+  transform: translateX(5px);
+}
+
+.job-list .job.active {
+  background: #fff3d2;
+  border-left: 5px solid #f7931e;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(249, 147, 30, 0.15);
+}
+
+.job-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+}
+
+.job {
+  padding: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.job-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.job-text h4 {
+  margin-bottom: 0.3rem;
+  margin-left: 0.2rem;
+  font-size: 16px;
+  color: #f7931e;
+  font-weight: 600;
+}
+
+.job-text p {
+  margin-bottom: 0.1rem;
+  margin-left: 0.2rem;
+  font-size: 13px;
+  color: #555;
+}
+
 button:hover {
+  transition: 0.2s;
   background-color: #ffeea8;
   color: #f7931e;
 }
@@ -131,6 +191,7 @@ button:hover {
   border-color: #f7931e;
   height: 100%;
   margin-right: 1rem;
+  transition: 0.2s;
 }
 
 .upload-btn {
@@ -143,6 +204,7 @@ button:hover {
   margin: 1rem 0;
   margin-left: 5.8rem;
   margin-bottom: 3rem;
+  transition: 0.2s;
 }
 
 .salary {
@@ -175,6 +237,18 @@ button:hover {
 .main {
   flex: 1;
   padding: 20px;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .job-list .job {
@@ -268,6 +342,9 @@ b {
 
 .upload-history a {
   color: #444;
+}
+
+.upload-history p {
   text-decoration: underline;
 }
 
@@ -279,8 +356,7 @@ b {
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 

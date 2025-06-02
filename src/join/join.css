@@ -25,6 +25,7 @@ header.navbar {
   font-size: 1.5rem;
   font-weight: bold;
   color: #ef8508;
+  margin-top: -1px;
 }
 
 nav {
@@ -74,6 +75,18 @@ nav a:hover {
 .left-content {
   max-width: 400px;
   margin-left: 1rem;
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .left-content h1 {
@@ -107,6 +120,7 @@ nav a:hover {
   align-items: center;
   padding: 2rem;
   background-color: #ffffff;
+  height: 150vh;
 }
 
 .form-container {
@@ -114,6 +128,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  animation: slideUp 0.4s ease-out;
 }
 
 .form-container h2 {
@@ -228,6 +243,20 @@ nav a:hover {
   transform: translateY(0);
 }
 
+.custom-category {
+  margin-top: 1rem;
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.custom-category.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .terms {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
@@ -260,12 +289,14 @@ nav a:hover {
   transition: background-color 0.3s ease;
   font-family: "Bricolage Grotesque", sans-serif;
   margin-top: 1rem;
+  transition: transform 0.3s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .join-button:hover {
   background: #ffde59;
   color: #80562b;
-  transition: 0.35s;
+  transition: 0.3s;
+  transform: translateY(-1px) scale(1.03);
 }
 
 .form-container form {

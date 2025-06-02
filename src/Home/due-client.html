@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ongoing Projects | ProLance</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
       rel="stylesheet"
@@ -14,7 +15,9 @@
   </head>
   <body>
     <header>
-      <div class="logo">ProLance</div>
+      <a href="/src/home-client/home-client.html"
+        ><div class="logo">ProLance</div></a
+      >
       <nav>
         <a href="/src/home-client/home-client.html">Home</a>
         <a href="/src/Networks/networks-client.html">Networks</a>
@@ -110,6 +113,42 @@
 
                 <b class="salary">Salary: $100</b>
                </pre>
+          <div class="upload">
+            <h3>Upload History</h3>
+            <ul class="upload-history">
+              <a href="#">
+                <li>
+                  <p>Revision 2.png</p>
+                  <span class="timestamp">10 minutes ago</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <p>Revision 1.png</p>
+                  <span class="timestamp">1 day ago</span>
+                </li></a
+              >
+            </ul>
+          </div>
+
+          <div class="contact-person">
+            <h3>Freelancer</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <a href="/src/Chats/chats-client.html">
+                <button class="contact-btn">Contact</button>
+              </a>
+            </div>
+          </div>
+
+          <button class="finish-project" onclick="showJob(event, 'submit')">
+            Finish Project
+          </button>
         </section>
 
         <section id="job2" class="job-detail">
@@ -150,85 +189,114 @@
 
                 <b class="salary">Salary: $150</b>
             </pre>
+          <div class="upload">
+            <h3>Upload History</h3>
+            <ul class="upload-history">
+              <a href="#">
+                <li>
+                  <p>Revision 2.png</p>
+                  <span class="timestamp">10 minutes ago</span>
+                </li></a
+              >
+              <a href="#"
+                ><li>
+                  <p>Revision 1.png</p>
+                  <span class="timestamp">1 day ago</span>
+                </li></a
+              >
+            </ul>
+          </div>
+
+          <div class="contact-person">
+            <h3>Freelancer</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <a href="/src/Chats/chats-client.html">
+                <button class="contact-btn">Contact</button>
+              </a>
+            </div>
+          </div>
+
+          <button class="finish-project" onclick="showJob(event, 'submit')">
+            Finish Project
+          </button>
         </section>
 
-        <section class="job-detail">
+        <section id="submit" class="job-detail">
           <div class="submit-header">
-            <h2>Add New Project</h2>
+            <h2>Project Completion</h2>
           </div>
           <form class="proposal-form">
-            <label for="name">Your Name</label><br />
+            <label for="name">Company Name</label><br />
             <input
               type="text"
               id="name"
               name="name"
-              placeholder="Enter your name"
+              placeholder="Lorem Ipsum Group"
               required
+              readonly
             /><br /><br />
 
-            <label for="email">Your Email</label><br />
+            <label for="email">Freelancer Name</label><br />
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Freelancer name"
+              readonly
             /><br /><br />
 
-            <label for="proposal">Description</label><br />
-            <textarea
-              id="proposal"
-              name="proposal"
-              rows="6"
-              placeholder="Enter a description"
-              required
-            ></textarea
-            ><br /><br />
-
-            <div class="upload-proposal">
-              <h3>Upload Proposal</h3>
-              <button class="upload-btn">⬆ Upload</button>
-            </div>
-
-            <div class="submit-proposal-btn">
-              <button type="submit">Send Proposal</button>
-            </div>
+            <label for="email">Project Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Website Design"
+              readonly
+            /><br /><br />
           </form>
-        </section>
 
-        <div class="upload">
-          <h3>Upload History</h3>
-          <ul class="upload-history">
-            <a href="#">
-              <li>
-                Revision 2.png <span class="timestamp">10 minutes ago</span>
-              </li></a
-            >
-            <a href="#"
-              ><li>
-                Revision 1.png <span class="timestamp">1 day ago</span>
-              </li></a
-            >
-          </ul>
-        </div>
-
-        <div class="contact-person">
-          <h3>Freelancer</h3>
-          <div class="client">
-            <img
-              src="/assets/img/profile.png"
-              alt="client icon"
-              class="client-icon"
-            />
-            <span>Freelancer Name</span>
-            <a href="/src/Chats/chats-client.html">
-              <button class="contact-btn">Contact</button>
-            </a>
+          <div class="upload-result">
+            <h3>Project Result</h3>
+            <a href="#"><p>Revision 2.png</p></a>
           </div>
-        </div>
 
-        <div class="finish-project">
-          <a href="/src/Home/project-completion.html">Finish Project</a>
-        </div>
+          <div class="review-section">
+            <h3>Rate & Review</h3>
+
+            <div class="star-rating">
+              <label>Rating:</label>
+              <div class="stars">
+                <span class="star" data-rating="1">★</span>
+                <span class="star" data-rating="2">★</span>
+                <span class="star" data-rating="3">★</span>
+                <span class="star" data-rating="4">★</span>
+                <span class="star" data-rating="5">★</span>
+              </div>
+              <span class="rating-display" id="ratingDisplay"
+                >Select a rating</span
+              >
+            </div>
+
+            <div class="review-form">
+              <label for="reviewText">Your Review</label>
+              <textarea
+                id="reviewText"
+                placeholder="Share your experience working with this freelancer..."
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+
+          <a href="#">
+            <div class="proceed-payment">Proceed with Payment</div></a
+          >
+        </section>
       </main>
     </div>
 
@@ -246,6 +314,8 @@
         /></a>
       </div>
     </footer>
+    <script src="/src/Home/Redirect.js"></script>
+    <script src="/src/Home/project-completion.js"></script>
     <script src="DueProject.js"></script>
     <script src="/src/home-client/profiledrop.js"></script>
   </body>

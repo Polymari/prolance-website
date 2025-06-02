@@ -21,7 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function logout() {
-  if (confirm("Are you sure you want to logout?")) {
-    window.location.href = "/src/login/login.html";
+  const confirmed = confirm("Are you sure you want to log out?");
+
+  if (!confirmed) {
+    event.preventDefault();
+  } else {
+    window.location.href = "/src/home-guest/home-guest.html";
   }
 }

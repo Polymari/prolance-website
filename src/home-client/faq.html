@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | ProLance</title>
+    <title>FAQ/Help | ProLance</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link rel="stylesheet" href="/src/home-client/faq.css" />
     <link rel="stylesheet" href="../global.css" />
     <link
@@ -13,7 +14,9 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="logo"><span>ProLance</span></div>
+      <a href="/src/home-after-join/home-after.html"
+        ><div class="logo"><span>ProLance</span></div></a
+      >
       <nav>
         <a href="/src/home-after-join/home-after.html">Home</a>
         <a href="/src/Networks/Networks.html">Networks</a>
@@ -55,7 +58,6 @@
           </button>
         </div>
 
-        <!-- FAQ Tab -->
         <div id="faq" class="tab-content active">
           <div class="faq-section">
             <div class="faq-search">
@@ -202,7 +204,6 @@
           </div>
         </div>
 
-        <!-- Contact Support Tab -->
         <div id="contact" class="tab-content">
           <div class="contact-section">
             <h2 style="color: #ff8c00; margin-bottom: 2rem; text-align: center">
@@ -210,7 +211,9 @@
             </h2>
             <div class="contact-grid">
               <div class="contact-method">
-                <div class="contact-icon">📧</div>
+                <div class="contact-icon">
+                  <img src="/assets/img/email.png" alt="email" />
+                </div>
                 <h3>Email Support</h3>
                 <p>Get help via email within 24 hours</p>
                 <p style="color: #ff8c00; font-weight: 600; margin-top: 1rem">
@@ -219,7 +222,9 @@
               </div>
 
               <div class="contact-method">
-                <div class="contact-icon">💬</div>
+                <div class="contact-icon">
+                  <img src="/assets/img/chat (2).png" alt="chat" />
+                </div>
                 <h3>Live Chat</h3>
                 <p>Chat with our support team in real-time</p>
                 <p style="color: #666; margin-top: 1rem">
@@ -228,7 +233,9 @@
               </div>
 
               <div class="contact-method">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon">
+                  <img src="/assets/img/phone-call (1).png" alt="phone" />
+                </div>
                 <h3>Phone Support</h3>
                 <p>Speak directly with our support specialists</p>
                 <p style="color: #ff8c00; font-weight: 600; margin-top: 1rem">
@@ -239,7 +246,6 @@
           </div>
         </div>
 
-        <!-- Report Issue Tab -->
         <div id="report" class="tab-content">
           <div class="report-form">
             <h2 style="color: #ff8c00; margin-bottom: 2rem">Report an Issue</h2>
@@ -253,18 +259,6 @@
                   <option value="account">Account Problem</option>
                   <option value="project">Project Related</option>
                   <option value="abuse">Report Abuse</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Priority Level</label>
-                <select class="form-select" required>
-                  <option value="">Select priority...</option>
-                  <option value="low">Low - General inquiry</option>
-                  <option value="medium">Medium - Affects my work</option>
-                  <option value="high">High - Urgent issue</option>
-                  <option value="critical">Critical - System down</option>
                 </select>
               </div>
 
