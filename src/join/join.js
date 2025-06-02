@@ -125,3 +125,20 @@ function handleFormSubmit(event) {
     errorMessage.style.display = "block";
   }
 }
+
+const freelancerSelect = document.getElementById("freelancerCategory");
+const customCategoryField = document.getElementById("customCategoryField");
+const customCategoryInput = document.getElementById("customCategory");
+
+freelancerSelect.addEventListener("change", function () {
+  if (this.value === "other") {
+    setTimeout(() => {
+      customCategoryField.classList.add("show");
+    }, 50);
+    customCategoryInput.required = true;
+  } else {
+    customCategoryField.classList.remove("show");
+    customCategoryInput.required = false;
+    customCategoryInput.value = "";
+  }
+});

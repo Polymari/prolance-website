@@ -20,6 +20,11 @@ a {
   transition: all 0.3s ease;
 }
 
+.logo {
+  font-weight: 600 !important;
+  line-height: 1.2;
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -305,8 +310,9 @@ a {
 }
 
 .send-btn img {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.1rem;
 }
 
 .socials {
@@ -344,8 +350,7 @@ a {
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 

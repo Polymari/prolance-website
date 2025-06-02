@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .profile-header {
   background-color: #ffeea8;
   height: 200px;
@@ -403,8 +407,7 @@
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 

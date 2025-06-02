@@ -58,12 +58,14 @@ nav > a:hover {
 }
 
 .profile-icon img {
-  height: 1.5rem;
+  height: 1.8rem;
   border-radius: 50%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .profile-icon img:hover {
   transform: scale(1.1);
+  transition: 0.2s;
   box-shadow: 0 4px 16px rgba(255, 225, 98, 0.4);
 }
 

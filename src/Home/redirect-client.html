@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posted Project | ProLance</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
       rel="stylesheet"
@@ -14,7 +15,9 @@
   </head>
   <body>
     <header>
-      <div class="logo">ProLance</div>
+      <a href="/src/home-client/home-client.html"
+        ><div class="logo">ProLance</div></a
+      >
       <nav>
         <a href="/src/home-client/home-client.html">Home</a>
         <a href="/src/Networks/networks-client.html">Networks</a>
@@ -160,6 +163,21 @@
 
                 <b class="salary">Salary: $150</b>
                </pre>
+          <div class="contact-person">
+            <h3>Candidates</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+
+              <button class="contact-btn" onclick="showJob(event, 'submit')">
+                View
+              </button>
+            </div>
+          </div>
         </section>
 
         <section id="job2" class="job-detail">
@@ -209,6 +227,20 @@
 
                 <b class="salary">Salary: $150</b>
                </pre>
+          <div class="contact-person">
+            <h3>Candidates</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <button class="contact-btn" onclick="showJob(event, 'submit')">
+                View
+              </button>
+            </div>
+          </div>
         </section>
 
         <section id="job3" class="job-detail">
@@ -258,6 +290,20 @@
 
                 <b class="salary">Salary: $150</b>
                </pre>
+          <div class="contact-person">
+            <h3>Candidates</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <button class="contact-btn" onclick="showJob(event, 'submit')">
+                View
+              </button>
+            </div>
+          </div>
         </section>
 
         <section id="job4" class="job-detail">
@@ -307,6 +353,20 @@
 
                 <b class="salary">Salary: $150</b>
                </pre>
+          <div class="contact-person">
+            <h3>Candidates</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <button class="contact-btn" onclick="showJob(event, 'submit')">
+                View
+              </button>
+            </div>
+          </div>
         </section>
 
         <section id="job5" class="job-detail">
@@ -356,22 +416,74 @@
 
                 <b class="salary">Salary: $150</b>
           </pre>
+          <div class="contact-person">
+            <h3>Candidates</h3>
+            <div class="client">
+              <img
+                src="/assets/img/profile.png"
+                alt="client icon"
+                class="client-icon"
+              />
+              <span>Freelancer Name</span>
+              <button class="contact-btn" onclick="showJob(event, 'submit')">
+                View
+              </button>
+            </div>
+          </div>
         </section>
 
-        <div class="contact-person">
-          <h3>Candidates</h3>
-          <div class="client">
+        <section id="submit" class="job-detail">
+          <div class="submit-header">
+            <h2>View Proposal</h2>
+          </div>
+          <a href="/src/Profile/friends-client.html">
             <img
               src="/assets/img/profile.png"
-              alt="client icon"
-              class="client-icon"
+              alt="freelancer icon"
+              class="freelancer-icon"
             />
-            <span>Freelancer Name</span>
-            <a href="/src/Home/view-proposal.html">
-              <button class="contact-btn">View</button>
-            </a>
-          </div>
-        </div>
+          </a>
+          <form class="proposal-form">
+            <label for="name">Freelancer Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Freelancer name"
+              required
+              readonly
+            /><br /><br />
+
+            <label for="email">Freelancer Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Freelancername@gmail.com"
+              readonly
+            /><br /><br />
+
+            <label for="proposal">Description</label><br />
+            <textarea
+              id="proposal"
+              name="proposal"
+              rows="6"
+              placeholder="I'm excited to bring my passion for [your field/skill] and my drive to continuously learn and contribute meaningfully to a team that values innovation, collaboration, and real impact."
+              required
+              readonly
+            ></textarea
+            ><br /><br />
+
+            <div class="upload">
+              <h3>Proposal</h3>
+              <a href="#"><p>Proposal.png</p></a>
+            </div>
+
+            <div class="submit-proposal-btn">
+              <button type="submit">Accept Candidate</button>
+            </div>
+          </form>
+        </section>
       </main>
     </div>
 

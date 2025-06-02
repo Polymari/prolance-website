@@ -59,6 +59,12 @@ aside {
   height: 50px;
   width: 50px;
   margin-top: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.avatar img:hover {
+  transform: translateY(-2px) scale(1.01);
+  transition: 0.3s;
 }
 
 .name {
@@ -118,6 +124,7 @@ aside {
   padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0px 0px 10px 3px #a6a6a630;
+  animation: slideUp 0.4s ease-out;
 }
 
 .search-sort {
@@ -133,6 +140,7 @@ aside {
   width: 85%;
   border: 1px solid #ccc;
   border-radius: 8px;
+  transition: transform 0.2s ease;
 }
 
 .search-sort input:focus {
@@ -164,6 +172,17 @@ aside {
   align-items: center;
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -177,10 +196,11 @@ aside {
   text-align: center;
   padding: 1rem;
   box-shadow: 0px 0px 10px 3px #a6a6a625;
+  transition: transform 0.3s ease;
 }
 
 .user-card:hover {
-  transform: translateY(-5px) scale(102%);
+  transform: translateY(-5px) scale(1.02);
   transition: transform 0.3s;
 }
 
@@ -194,6 +214,7 @@ aside {
   cursor: pointer;
   font-size: 0.85rem;
   margin-bottom: 1rem;
+  transition: 0.2s;
 }
 
 .connect-btn:hover {
@@ -226,10 +247,11 @@ aside {
   margin-bottom: 1rem;
   width: 100%;
   box-shadow: 0px 0px 10px 3px #a6a6a625;
+  transition: transform 0.3s ease;
 }
 
 .group-card:hover {
-  transform: translateY(-5px) scale(101%);
+  transform: translateY(-5px) scale(1.01);
   transition: transform 0.3s;
 }
 
@@ -268,6 +290,7 @@ aside {
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.85rem;
+  transition: 0.2s;
 }
 
 .view-btn:hover {
@@ -287,12 +310,7 @@ aside {
   color: #7d7c7c;
   box-shadow: 0px 0px 10px 3px #a6a6a625;
   max-width: 150px;
-}
-
-.see-more > a:hover {
-  background: #ffeea8;
-  color: #f7931e !important;
-  transition: background 0.35s;
+  transition: 0.2s;
 }
 
 .see-more:hover {
@@ -312,6 +330,7 @@ aside {
   color: #7d7c7c;
   box-shadow: 0px 0px 10px 3px #a6a6a625;
   max-width: 150px;
+  transition: 0.2s;
 }
 
 .see-more-group:hover {
@@ -328,8 +347,7 @@ aside {
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 

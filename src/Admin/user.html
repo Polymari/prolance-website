@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Management | ProLance</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap"
       rel="stylesheet"
@@ -18,7 +19,7 @@
           <span></span>
           <span></span>
         </div>
-        <div class="logo" onclick="refreshDashboard()">ProLance</div>
+        <a href="/src/Admin/Dashboard.html"><div class="logo">ProLance</div></a>
       </div>
       <div class="header-right">
         <a href="/src/Admin/notif.html"
@@ -58,9 +59,9 @@
           <table class="reports-table">
             <thead>
               <tr>
-                <th onclick="sortTable(0)">Username ↕️</th>
-                <th onclick="sortTable(1)">Date Joined ↕️</th>
-                <th onclick="sortTable(2)">Actions ↕️</th>
+                <th onclick="sortTable(0)">Username</th>
+                <th onclick="sortTable(1)">Date Joined</th>
+                <th onclick="sortTable(2)">Actions</th>
               </tr>
             </thead>
             <tbody id="reportsTableBody">

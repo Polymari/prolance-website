@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 800px;
   margin: 3rem auto;
@@ -11,7 +15,7 @@
   padding: 3rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  animation: slideUp 0.6s ease-out;
+  animation: slideUp 0.4s ease-out;
 }
 
 @keyframes slideUp {
@@ -33,7 +37,7 @@
 .form-header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #f7931e, #fbe799);
+  background: #ef8508;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -166,7 +170,7 @@ textarea {
 }
 
 .file-tag {
-  background: linear-gradient(135deg, #f7931e, #fbe799);
+  background: #ffa237;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -292,14 +296,14 @@ textarea {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #f7931e 0%, #ffd736 100%);
+  background: #ef8508;
   color: white;
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+  box-shadow: 0px 8px 16px 0px rgba(246, 196, 32, 0.384);
 }
 
 .btn-secondary {
@@ -332,8 +336,7 @@ textarea {
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 

@@ -10,6 +10,17 @@ a {
   color: #333;
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .profile-header .profile-picture {
   position: absolute;
   bottom: -60px;
@@ -19,6 +30,7 @@ a {
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #ffffff;
+  animation: slideUp 0.4s ease-out;
 }
 
 .profile-header .profile-picture img {
@@ -66,6 +78,7 @@ a {
 .profile-header .edit-icon img {
   width: 20px;
   height: 20px;
+  animation: slideUp 0.4s ease-out;
 }
 
 .profile-details {
@@ -77,6 +90,7 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   border-radius: 10px;
+  animation: slideUp 0.4s ease-out;
 }
 
 .connect-button {
@@ -164,6 +178,7 @@ a {
   margin: 30px 150px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.4s ease-out;
 }
 
 .about-section h2 {
@@ -183,6 +198,7 @@ a {
   margin: 30px 150px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.4s ease-out;
 }
 
 .ratings-section h2 {
@@ -312,20 +328,21 @@ a {
 .see-more {
   display: block;
   margin: 20px auto 0;
+  margin-top: 2.5rem;
   padding: 15px 25px;
   font-size: 18px;
-  color: #333;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  background-color: white;
+  color: #7d7c7c;
+  border-style: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.153);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .see-more:hover {
-  background-color: #f0f0f0;
-  color: #000;
+  background-color: #ffeea8;
+  color: #ef8508;
 }
 
 .experience-section {
@@ -334,6 +351,7 @@ a {
   margin: 30px 150px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.4s ease-out;
 }
 
 .experience-section h2 {
@@ -371,6 +389,7 @@ a {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
+  animation: slideUp 0.4s ease-out;
 }
 
 .skills-section h2 {
@@ -408,8 +427,7 @@ a {
 .profile-icon img {
   cursor: pointer;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  height: 1.8rem;
   object-fit: cover;
 }
 
